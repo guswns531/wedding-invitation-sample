@@ -67,7 +67,7 @@ function Groom() {
               <div className='mainsection-text'>
                 <div className='mainsection-text-1'>결혼식에 초대합니다</div>
                 <div className='mainsection-text-2'>
-                  김신랑 <span className='text2-inner'> & </span> 이신부
+                  함준영 <span className='text2-inner'> & </span> 이신부
                 </div>
                 <div className='mainsection-text-3'>2023. 00. 0 토요일 오전 11시<br/>00대학교 웨딩홀</div>
               </div>

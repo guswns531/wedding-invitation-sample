@@ -8,6 +8,8 @@ import { Container as MapDiv, NaverMap, Marker, useNavermaps} from 'react-naver-
 import '../App.css';
 import ImageModal from '../components/imageModal';
 import AccountModal from '../components/accountModal';
+import mainphoto from '../pages/main.JPG'
+import subphoto from '../pages/sub.jpg'
 
 function Bride() {
   // state for image modal
@@ -20,8 +22,8 @@ function Bride() {
   const navermaps = useNavermaps()
 
   const handleClick = (item, index) => {
-    setCurrentIndex(index);
-    setClickedImg(item.link);
+    //setCurrentIndex(index);
+    //setClickedImg(item.link);
   };
   const accountClick = (account_data) => {
     setClickedAccountData(account_data.data);
@@ -71,30 +73,26 @@ function Bride() {
           <div className="col-md">
             <div className='mainsection'>
               <div>
-                <img src="https://dave-khim-aws-bucket-public.s3.ap-northeast-2.amazonaws.com/test/love-tenderness-couple-s-crossed-hands.jpg" className='main-image' alt='t1'></img>
+                <img src={mainphoto} className='main-image' alt='t1'></img>
               </div>
               <div className='mainsection-text'>
-                <div className='mainsection-text-1'>결혼식에 초대합니다</div>
                 <div className='mainsection-text-2'>
-                  김신랑 <span className='text2-inner'> & </span> 이신부
+                  김유리 <span className='text2-inner'> & </span> 함준영
                 </div>
-                <div className='mainsection-text-3'>2023. 00. 0 토요일 오전 11시<br/>00대학교 웨딩홀</div>
+                <div className='mainsection-text-3'>2025. 02. 08 토요일 오후 4시 30분<br/>드레스가든 청담</div>
               </div>
             </div>
             <div className='invitation-section'>
               <div className='invitation-section-text1'>INVITATION</div>
               <div className='invitation-section-text2'>
-                    저희 두 사람이 사랑과 믿음으로<br/>
-                    한 가정을 이루게 되었습니다.<br/>
-                    바쁘시더라도 부디 오셔서<br/>
-                    저희의 앞날을 축복해 주시고<br/>
-                    격려해 주시면 감사하겠습니다.
+                    츄리는 맨날 싸우지만<br/>
+                    츄리 부부는 어떻게든 잘 살아보겠습니다요
               </div>
               <div className='invitation-section-text3'>
-                김아빠・이엄마<span className='text3-inner'>의 장남</span> 신랑
+                함형인・최금란<span className='text3-inner'>의 아들</span> 준영
               </div>
               <div className='invitation-section-text3'>
-                이아빠・박엄마<span className='text3-inner'>의 차녀</span> 신부
+                김기태・박재영<span className='text3-inner'>의 딸</span> 유리
               </div>
             </div>
             <div className='gallery-section'>
@@ -106,7 +104,7 @@ function Bride() {
               <div className='gallery-image-list-wrapper row'>
                   {data.data.map((item, index) => (
                     <div key={index} className='col-4'>
-                      <img className='gallery-image' src={item.thumb_image_link} alt={item.text} onClick={()=> handleClick(item, index)}/>
+                      <img className='gallery-image' src={subphoto} alt={item.text} onClick={()=> handleClick(item, index)}/>
                     </div>
                   ))}
               </div>
@@ -129,7 +127,7 @@ function Bride() {
                   height: '350px'
                 }}
               >
-                <NaverMap 
+                {/* <NaverMap 
                   defaultCenter={new navermaps.LatLng(37.44865592343993,126.95097244672262)}
                   defaultZoom={16}>
                   <Marker 
@@ -140,39 +138,36 @@ function Bride() {
                       size : new navermaps.Size(64,64)
                     }
                   }/>
-                </NaverMap>
+                </NaverMap> */}
+                <div>앱(지도) 연동 할건데 인증 오류로 잠시 비어있음</div>
               </MapDiv>
             </div>
-            <div className='location-info-section'>
-                <div className='location-info-section-text1'>이라운지 서울대점</div>
-                <div className='location-info-section-text2'>
-                    서울특별시 관악구 관악로 1<br/>
-                    서울대학교 310동 엔지니어하우스<br/>
-                    Tel. 02-875-7761
-                </div>
+            <div className='location-how-publictrans-section'>
+              <div className='location-how-publictrans-section-text1'>위치</div>
+              <div className='location-how2-section-text2'>
+                <div>서울 강남구 영동대로 707</div>
+              </div>
             </div>
             <div className='location-how-publictrans-section'>
               <div className='location-how-publictrans-section-text1'>대중교통</div>
-              <ol className='location-how-publictrans-section-list'>
-                <li>2호선 서울대입구역 3번 출구 → 5511,5513 버스 → 제2공학관(종점) 하차</li>
-                <li>2호선 낙성대역 4번 출구 → 관악02 마을버스 → 제2공학관(종점) 하차</li>
-                <li>신림선 관악산역 1번 출구 → 5511,5516 버스 → 제2공학관(종점) 하차</li>
-              </ol>
+              <div className='location-how2-section-text2'>
+                <div>청담역 13번 출구</div>
+              </div>
             </div>
             <div className='location-how2-section'>
               <div className='location-how2-section-text1'>자가용</div>
               <div className='location-how2-section-text2'>
-                네비게이션 이용 시 “이라운지 서울대점”을 입력하세요. (주차 2시간 무료)
+                그냥 대중교통으로 오세요(기계식 주차임)
               </div>
             </div>
             <div className='congratulatory-section'>
-              <div className='congratulatory-section-text'>마음 전하실 곳</div>
+              <div className='congratulatory-section-text'>마음 전하실 곳??(일단 팝업 닫아둠, 계좌 모름)</div>
                 <div 
                   className='congratulatory-section-btn' 
-                  onClick={() => accountClick(groomAccountData)}>신랑측 계좌번호</div>
+                  onClick={() => accountClick(groomAccountData)}>신랑측</div>
                 <div 
                   className='congratulatory-section-btn'
-                  onClick={() => accountClick(brideAccountData)}>신부측 계좌번호</div>
+                  onClick={() => accountClick(brideAccountData)}>신부측</div>
             </div>
             {clickedAccountData && <AccountModal 
               clickedAccountData={clickedAccountData}
