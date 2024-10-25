@@ -2,16 +2,9 @@
     "data" : [
         {
             "title" : "신부 계좌",
-            "bank_name" : "신한은행",
-            "account_owner" : "이신부",
-            "account_number" : "111-222-333333"
-        },
-        {
-            "title" : "혼주 계좌",
-            "bank_name" : "신한은행",
-            "account_owner" : "이장인",
-            "account_number" : "110-222-333333"
+            "bank_name" : "신한",
+            "account_owner" : "김유리",
+            "account_number" : "110231632971"
         }
-
     ]
 }
