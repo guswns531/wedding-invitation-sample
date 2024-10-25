@@ -85,8 +85,8 @@ function Bride() {
             <div className='invitation-section'>
               <div className='invitation-section-text1'>INVITATION</div>
               <div className='invitation-section-text2'>
-                    츄리는 맨날 싸우지만<br/>
-                    츄리 부부는 어떻게든 잘 살아보겠습니다요
+                    INVITATION<br/>
+                    INVITATION
               </div>
               <div className='invitation-section-text3'>
                 함형인・최금란<span className='text3-inner'>의 아들</span> 준영
