@@ -139,7 +139,7 @@ function Bride() {
                     }
                   }/>
                 </NaverMap> */}
-                <div>앱(지도) 연동 할건데 인증 오류로 잠시 비어있음</div>
+                <div></div>
               </MapDiv>
             </div>
             <div className='location-how-publictrans-section'>
@@ -155,13 +155,13 @@ function Bride() {
               </div>
             </div>
             <div className='location-how2-section'>
-              <div className='location-how2-section-text1'>자가용</div>
+              <div className='location-how2-section-text1'>주차</div>
               <div className='location-how2-section-text2'>
-                그냥 대중교통으로 오세요(기계식 주차임)
+                건물 내 기계식 주차
               </div>
             </div>
             <div className='congratulatory-section'>
-              <div className='congratulatory-section-text'>마음 전하실 곳??(일단 팝업 닫아둠, 계좌 모름)</div>
+              <div className='congratulatory-section-text'>마음 전하실 곳</div>
                 <div 
                   className='congratulatory-section-btn' 
                   onClick={() => accountClick(groomAccountData)}>신랑측</div>
