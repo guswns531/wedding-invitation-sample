@@ -85,8 +85,8 @@ function Bride() {
             <div className='invitation-section'>
               <div className='invitation-section-text1'>INVITATION</div>
               <div className='invitation-section-text2'>
-                    INVITATION<br/>
-                    INVITATION
+                    뭐라고 쓸지 모르겠어용 <br/>
+
               </div>
               <div className='invitation-section-text3'>
                 함형인・최금란<span className='text3-inner'>의 아들</span> 준영
