@@ -139,25 +139,29 @@ function Bride() {
               </FadeInSection>
             </div>
             <div className='gallery-section'>
-              <div className='gallery-section-text'>
-                GALLERY
-              </div>
+              <FadeInSection>
+                <div className='gallery-section-text'>
+                  GALLERY
+                </div>
+              </FadeInSection>
             </div>
-            <div>
-              <div className='gallery-image-list-wrapper row'>
-                  {data.data.map((item, index) => (
-                    <div key={index} className='col-4'>
-                      <img className='gallery-image' src={subphoto} alt={item.text} onClick={()=> handleClick(item, index)}/>
-                    </div>
-                  ))}
+            <FadeInSection>
+              <div>
+                <div className='gallery-image-list-wrapper row'>
+                    {data.data.map((item, index) => (
+                      <div key={index} className='col-4'>
+                        <img className='gallery-image' src={subphoto} alt={item.text} onClick={()=> handleClick(item, index)}/>
+                      </div>
+                    ))}
+                </div>
+                {clickedImg && <ImageModal 
+                clickedImg={clickedImg}
+                handleRotationRight={handleRotationRight}
+                handleRotationLeft={handleRotationLeft}
+                setClickedImg={setClickedImg}
+                />}
               </div>
-              {clickedImg && <ImageModal 
-              clickedImg={clickedImg}
-              handleRotationRight={handleRotationRight}
-              handleRotationLeft={handleRotationLeft}
-              setClickedImg={setClickedImg}
-              />}
-            </div>
+            </FadeInSection>
             <div className='location-section'>
               <div className='location-section-text1'>
                 LOCATION
