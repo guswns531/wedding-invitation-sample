@@ -176,7 +176,7 @@ function Bride() {
                   height: '350px'
                 }}
               >
-                {/* <NaverMap 
+                <NaverMap 
                   defaultCenter={new navermaps.LatLng(37.44865592343993,126.95097244672262)}
                   defaultZoom={16}>
                   <Marker 
@@ -187,7 +187,7 @@ function Bride() {
                       size : new navermaps.Size(64,64)
                     }
                   }/>
-                </NaverMap> */}
+                </NaverMap>
                 <div></div>
               </MapDiv>
             </div>
