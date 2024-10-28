@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import data from '../assets/image_data.json';
 import pinIcon from '../assets/location-pin.png';
 import brideAccountData from '../assets/bride_account_number_data.json';
