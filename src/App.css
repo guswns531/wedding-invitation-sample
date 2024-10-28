@@ -458,10 +458,10 @@
 }
 .copy-success {
   width: 310px;
-  background: #000;
+  background: #FFFFFF;
   opacity: 70%;
   border-radius: 3px;
-  color: #000;
+  color: #9c9c9c;
   text-align: center;
   font-family: 'NotoSansKR';
   font-size: 12px;
