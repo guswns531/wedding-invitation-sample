@@ -220,7 +220,7 @@ function Bride() {
                   className='congratulatory-section-btn'
                   onClick={() => accountClick(brideAccountData)}>신부측</div>
             </div>
-            <FadeInSection>
+            </FadeInSection>
             {clickedAccountData && <AccountModal 
               clickedAccountData={clickedAccountData}
               setClickedAccountData={setClickedAccountData}
