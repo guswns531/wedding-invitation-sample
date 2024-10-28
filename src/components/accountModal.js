@@ -1,4 +1,44 @@
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import React, { useEffect, useRef, useState } from 'react';
+
+
+const FadeInSection = ({ children }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.unobserve(entry.target); // 중복 관찰 방지
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
+  return (
+    <div
+      ref={sectionRef}
+      className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+    >
+      {children}
+    </div>
+  );
+};
 
 
 const accountModal = ({clickedAccountData, setClickedAccountData, copiedAccount, setCopiedAccount}) => {
@@ -46,7 +86,7 @@ const accountModal = ({clickedAccountData, setClickedAccountData, copiedAccount,
                         </CopyToClipboard>
                         
                     </div>
-                    { copiedAccount === item.account_number && <div className="copy-success">복사되었습니다.</div> }
+                    { copiedAccount === item.account_number && <FadeInSection><div className="copy-success">복사되었습니다.</div></FadeInSection>}
                     
                     
                 </div>
