@@ -181,6 +181,7 @@ function Bride() {
                   defaultZoom={16}>
                   <Marker 
                   position={new navermaps.LatLng(37.5206757,127.0558977)} 
+                  map={map}
                   }/>
                 </NaverMap>
                 <div></div>
