@@ -163,9 +163,11 @@ function Bride() {
               </div>
             </FadeInSection>
             <div className='location-section'>
+              <FadeInSection>
               <div className='location-section-text1'>
                 LOCATION
               </div>
+              </FadeInSection>
             </div>
             <div className='location-map-section'>
               <MapDiv
@@ -189,6 +191,7 @@ function Bride() {
                 <div></div>
               </MapDiv>
             </div>
+            <FadeInSection>
             <div className='location-how-publictrans-section'>
               <div className='location-how-publictrans-section-text1'>위치</div>
               <div className='location-how2-section-text2'>
@@ -204,9 +207,10 @@ function Bride() {
             <div className='location-how2-section'>
               <div className='location-how2-section-text1'>주차</div>
               <div className='location-how2-section-text2'>
-                건물 내 기계식 주차
-              </div>
+                건물 내 기계식 주차</div>
             </div>
+            </FadeInSection>
+            <FadeInSection>
             <div className='congratulatory-section'>
               <div className='congratulatory-section-text'>마음 전하실 곳</div>
                 <div 
@@ -216,6 +220,7 @@ function Bride() {
                   className='congratulatory-section-btn'
                   onClick={() => accountClick(brideAccountData)}>신부측</div>
             </div>
+            <FadeInSection>
             {clickedAccountData && <AccountModal 
               clickedAccountData={clickedAccountData}
               setClickedAccountData={setClickedAccountData}
