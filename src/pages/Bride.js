@@ -178,7 +178,7 @@ function Bride() {
               >
                 <NaverMap 
                   defaultCenter={new navermaps.LatLng(37.5206757,127.0558977)}
-                  defaultZoom={19}>
+                  defaultZoom={18}>
                 </NaverMap>
                 <div></div>
               </MapDiv>
