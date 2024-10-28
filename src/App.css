@@ -458,13 +458,13 @@
 }
 .copy-success {
   width: 310px;
-  background: #8dcd8d;
+  background: #000;
   opacity: 70%;
   border-radius: 3px;
   color: #000;
   text-align: center;
   font-family: 'NotoSansKR';
-  font-size: 15px;
+  font-size: 12px;
   font-style: normal;
 }
 .each-copy-btn {
