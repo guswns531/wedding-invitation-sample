@@ -124,17 +124,19 @@ function Bride() {
               </FadeInSection>
             </div>
             <div className='invitation-section'>
-              <div className='invitation-section-text1'>INVITATION</div>
-              <div className='invitation-section-text2'>
-                    뭐라고 쓸지 모르겠어용 <br/>
-
-              </div>
-              <div className='invitation-section-text3'>
-                함형인・최금란<span className='text3-inner'>의 아들</span> 준영
-              </div>
-              <div className='invitation-section-text3'>
-                김기태・박재영<span className='text3-inner'>의 딸</span> 유리
-              </div>
+              <FadeInSection>
+                <div className='invitation-section-text1'>INVITATION</div>
+                <div className='invitation-section-text2'>
+                      뭐라고 쓸지 모르겠어용 <br/>
+  
+                </div>
+                <div className='invitation-section-text3'>
+                  함형인・최금란<span className='text3-inner'>의 아들</span> 준영
+                </div>
+                <div className='invitation-section-text3'>
+                  김기태・박재영<span className='text3-inner'>의 딸</span> 유리
+                </div>
+              </FadeInSection>
             </div>
             <div className='gallery-section'>
               <div className='gallery-section-text'>
