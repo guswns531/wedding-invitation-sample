@@ -11,6 +11,45 @@ import AccountModal from '../components/accountModal';
 import mainphoto from '../pages/main.JPG'
 import subphoto from '../pages/sub.jpg'
 
+const FadeInSection = ({ children }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.unobserve(entry.target); // 중복 관찰 방지
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
+  return (
+    <div
+      ref={sectionRef}
+      className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+    >
+      {children}
+    </div>
+  );
+};
+
+
 function Bride() {
   // state for image modal
   const [clickedImg, setClickedImg] = useState(null);
@@ -75,12 +114,14 @@ function Bride() {
               <div>
                 <img src={mainphoto} className='main-image' alt='t1'></img>
               </div>
-              <div className='mainsection-text'>
-                <div className='mainsection-text-2'>
-                  김유리 <span className='text2-inner'> & </span> 함준영
+              <FadeInSection>
+                <div className='mainsection-text'>
+                  <div className='mainsection-text-2'>
+                    김유리 <span className='text2-inner'> 그리고 </span> 함준영
+                  </div>
+                  <div className='mainsection-text-3'>2025. 02. 08 토요일 오후 4시 30분<br/>드레스가든 청담</div>
                 </div>
-                <div className='mainsection-text-3'>2025. 02. 08 토요일 오후 4시 30분<br/>드레스가든 청담</div>
-              </div>
+              </FadeInSection>
             </div>
             <div className='invitation-section'>
               <div className='invitation-section-text1'>INVITATION</div>
