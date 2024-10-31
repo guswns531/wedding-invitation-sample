@@ -10,6 +10,10 @@ import ImageModal from '../components/imageModal';
 import AccountModal from '../components/accountModal';
 import mainphoto from '../pages/main.JPG'
 import subphoto from '../pages/sub.jpg'
+import { Snackbar, Button } from '@mui/material';
+import { motion } from 'framer-motion';
+import Snowfall from 'react-snowfall';
+
 
 const FadeInSection = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false);
