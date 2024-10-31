@@ -127,7 +127,7 @@ function Bride() {
               <FadeInSection>
                 <div className='invitation-section-text1'>INVITATION</div>
                 <div className='invitation-section-text2'>
-                      뭐라고 쓸지 모르겠어용 <br/>
+                      초대글이 어려워요 <br/>
   
                 </div>
                 <div className='invitation-section-text3'>
