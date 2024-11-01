@@ -3,19 +3,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Snackbar, Button } from '@mui/material';
 
 const FadeInSection = ({ children }) => {
-  const [open, setOpen] = useState(false);
-
-  const handleClick = () => {
-    setOpen(true);
-  };
-
-  const handleClose = (event, reason) => {
-    if (reason === 'clickaway') {
-      return;
-    }
-    setOpen(false);
-  };
-  
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
@@ -55,19 +42,6 @@ const FadeInSection = ({ children }) => {
 
 
 const accountModal = ({clickedAccountData, setClickedAccountData, copiedAccount, setCopiedAccount}) => {
-  const [open, setOpen] = useState(false);
-
-  const handleClick = () => {
-    setOpen(true);
-  };
-
-  const handleClose = (event, reason) => {
-    if (reason === 'clickaway') {
-      return;
-    }
-    setOpen(false);
-  };
-
     const delay = ms => new Promise(
     resolve => setTimeout(resolve, ms)
     );
@@ -106,12 +80,7 @@ const accountModal = ({clickedAccountData, setClickedAccountData, copiedAccount,
                         text={item.account_number}
                         onCopy={() => copyAccountNumber(item.account_number)}
                         >
-                            <Button className="each-copy-btn" onClick={handleClick}>복사하기</Button>
-                            <Snackbar open={open}
-                                      autoHideDuration={3000}
-                                      onClose={handleClose}
-                                      message="This is a snackbar message"
-                                      anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}/>
+                            <Button className="each-copy-btn">복사하기</Button>
                         </CopyToClipboard>
                     </div>
                 </div>
