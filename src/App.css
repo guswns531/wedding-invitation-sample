@@ -379,7 +379,7 @@
 }
 .overlay-arrows_left {
   display: flex;
-  background-color: #6d6d6d;
+  background-color: #ffffff;
   justify-content: space-between;
   position: absolute;
   top: 50%;
@@ -401,7 +401,7 @@
 
 .overlay-arrows_right {
   display: flex;
-  background-color: #6d6d6d;
+  background-color: #ffffff;
   justify-content: space-between;
   position: absolute;
   right: 0;
