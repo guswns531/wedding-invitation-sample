@@ -31,10 +31,6 @@
 .main-image {
   width: 100%;
   height: auto;
-  borderRadius: '15px';
-  border: '5px solid #ccc';
-  padding: '5px';
-  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)';
 }
 
 .mainsection-text {
@@ -324,13 +320,13 @@
 }
 .congratulatory-section-btn {
   display: flex;
-  width: 330px;
+  width: 300px;
   padding: 12px 10px;
   justify-content: center;
   align-items: center;
   gap: 10px;
   border-radius: 8px;
-  background: #FFF;
+  background: #dbedaf;
   display: flex;
   border-color: white;
   color: #000;
