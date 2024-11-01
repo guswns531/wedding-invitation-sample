@@ -10,6 +10,7 @@ import ImageModal from '../components/imageModal';
 import AccountModal from '../components/accountModal';
 import mainphoto from '../pages/함준영님-34.jpg'
 import subphoto from '../pages/sub.jpg'
+import ment from '../pages/IMG_0236.jpg'
 import { Snackbar, Button } from '@mui/material';
 import { motion } from 'framer-motion';
 import Snowfall from 'react-snowfall';
@@ -131,6 +132,7 @@ function Bride() {
             <div className='invitation-section'>
               <FadeInSection>
                 <div className='invitation-section-text1'>INVITATION</div>
+                <img src={ment} className='main-image' alt='t1'></img>
                 <div className='invitation-section-text2'>
                       초대글이 어려워요 <br/>
   
