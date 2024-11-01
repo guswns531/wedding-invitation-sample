@@ -107,7 +107,7 @@ function Bride() {
   };
 
   return (
-    <div className="">
+    <div className="outside">
       <div className='main container'>
         <div className="row justify-content-md-center">
           <div className="col col-md-2 col-lg-3">
