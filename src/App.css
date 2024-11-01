@@ -46,7 +46,7 @@
   margin-bottom: 10px;
   color: #000;
   text-align: center;
-  font-family: 'NanumMyeongjo';
+  font-family: 'GabiaGosran';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -62,7 +62,7 @@
   
   color: #000;
   text-align: center;
-  font-family: 'NanumMyeongjo';
+  font-family: 'GabiaGosran';
   font-size: 28px;
   font-style: normal;
   font-weight: 600;
@@ -70,7 +70,7 @@
   letter-spacing: -0.32px;
 }
 .text2-inner {
-  font-family: 'NanumMyeongjo';
+  font-family: 'GabiaGosran';
   font-size: 22px;
   margin: 0 5px;
   font-style: normal;
@@ -81,7 +81,7 @@
 .mainsection-text-3 {
   color: #000;
   text-align: center;
-  font-family: 'NanumMyeongjo';
+  font-family: 'GabiaGosran';
   font-size: 18px;
   font-style: normal;
   font-weight: 550;
@@ -111,7 +111,7 @@
   margin-bottom: 32px;
   color: #000;
   text-align: center;
-  font-family: 'NanumMyeongjo';
+  font-family: 'GabiaGosran';
   font-size: 15px;
   font-style: normal;
   font-weight: 800;
@@ -121,7 +121,7 @@
   margin-bottom: 32px;
   color: #000;
   text-align: center;
-  font-family: NanumMyeongjo;
+  font-family: GabiaGosran;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -140,14 +140,14 @@
   flex: 1 0 0; */
   width: 100%;
   text-align: center;
-  font-family: 'NanumMyeongjo';
+  font-family: 'GabiaGosran';
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 30px;
 }
 .text3-inner {
-  font-family: 'NanumMyeongjo';
+  font-family: 'GabiaGosran';
   font-size: 16px;
   margin: 0 5px;
   font-style: normal;
