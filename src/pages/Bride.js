@@ -189,11 +189,11 @@ function Bride() {
               </MapDiv>
             </div>
             <FadeInSection>
-            <div className='location-how-publictrans-section'>
+            <div className='location-how2-section'>
               <div className='location-how-publictrans-section-text1'>위치</div>
               <div className='location-how2-section-text2'>서울 강남구 영동대로 707</div>
             </div>
-            <div className='location-how-publictrans-section'>
+            <div className='location-how2-section'>
               <div className='location-how-publictrans-section-text1'>대중교통</div>
               <div className='location-how2-section-text2'>청담역 13번 출구</div>
             </div>
