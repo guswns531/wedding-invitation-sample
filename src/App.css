@@ -520,3 +520,11 @@
   font-family: 'NotoSansKR';
   src: local('NotoSansKR'), url(./fonts/Noto_Sans_KR/NotoSansKR-Regular.otf) format('truetype');
 }
+@font-face {
+  font-family: 'GabiaGosran';
+  src: local('GabiaGosran'), url(./fonts/gabia/GabiaGosran.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Hakgyoansim';
+  src: local('Hakgyoansim'), url(./fonts/받아쓰기/Hakgyoansim Badasseugi TTF L.ttf) format('truetype');
+}
