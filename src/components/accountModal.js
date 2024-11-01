@@ -94,8 +94,8 @@ const accountModal = ({clickedAccountData, setClickedAccountData, copiedAccount,
                         text={item.account_number}
                         onCopy={() => copyAccountNumber(item.account_number)}
                         >
-                            <div className="each-copy-btn" 
-                            >복사하기</div>
+                            <Button className="each-copy-btn" 
+                            >복사하기</Button>
                         </CopyToClipboard>
                         
                     </div>
