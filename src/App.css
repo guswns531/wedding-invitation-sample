@@ -9,7 +9,9 @@
     transform: translateY(0);
 }
   
-
+.outside {
+  background-color: white;
+}
 
 .col-md {
   padding-left: 0px;
