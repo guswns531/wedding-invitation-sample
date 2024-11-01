@@ -132,9 +132,9 @@ function Bride() {
             <div className='invitation-section'>
               <FadeInSection>
                 <div className='invitation-section-text1'>INVITATION</div>
-                <img src={ment} className='main-image' alt='t1'></img>
+                
                 <div className='invitation-section-text2'>
-                      초대글이 어려워요 <br/>
+                      여기다가 뭐라고 적을지 추천해줘 졔양 미내양 <br/>
   
                 </div>
                 <div className='invitation-section-text3'>
@@ -222,7 +222,7 @@ function Bride() {
               setCopiedAccount={setCopiedAccount}
               />}
           </div>
-
+          <img src={ment} className='main-image' alt='t1'></img>
           <div className="col col-md-2 col-lg-3">
           </div>
         </div>
