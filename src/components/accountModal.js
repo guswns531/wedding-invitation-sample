@@ -42,14 +42,6 @@ const FadeInSection = ({ children }) => {
 
 
 const accountModal = ({clickedAccountData, setClickedAccountData, copiedAccount, setCopiedAccount}) => {
-    const [buttonText, setButtonText] = useState("복사하기"); // 초기 문구 설정
-
-    const handleClick = () => {
-      setButtonText((prevText) => 
-        prevText === "복사하기" ? "✔복사 되었습니다" : "복사하기"
-      );
-    };
-  
     const delay = ms => new Promise(
     resolve => setTimeout(resolve, ms)
     );
