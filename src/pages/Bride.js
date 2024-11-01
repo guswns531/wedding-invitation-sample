@@ -110,11 +110,11 @@ function Bride() {
     <div className="outside">
       <div className='main container'>
         <div className="row justify-content-md-center">
+          <Snowfall color="white" snowflakeCount={50}/>
           <div className="col col-md-2 col-lg-3">
           </div>
 
           <div className="col-md">
-          <Snowfall color="white" snowflakeCount={50}/>
             <div className='mainsection'>
               <div>
                 <img src={mainphoto} className='main-image' alt='t1'></img>
