@@ -28,7 +28,7 @@
 .container {
   width: 90%; /* 페이지 크기 조정 */
   height: 90%; /* 페이지 크기 조정 */
-  background-color: white;
+  background-color: #d2eafc;
   border-radius: 20px; /* 둥근 테두리 */
   overflow: hidden; /* 테두리 밖 내용 숨김 */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
