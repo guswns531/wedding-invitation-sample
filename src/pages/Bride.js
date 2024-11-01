@@ -134,7 +134,7 @@ function Bride() {
                 <div className='invitation-section-text1'>INVITATION</div>
                 
                 <div className='invitation-section-text2'>
-                      여기다가 뭐라고 적을지 추천해줘 졔양 미내양 <br/>
+                      뭐라고 적을지 추천해줘 졔양 미내양 <br/>
   
                 </div>
                 <div className='invitation-section-text3'>
