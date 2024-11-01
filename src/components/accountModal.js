@@ -99,14 +99,7 @@ const accountModal = ({clickedAccountData, setClickedAccountData, copiedAccount,
                         </CopyToClipboard>
                         
                     </div>
-                    { copiedAccount === item.account_number && <Snackbar
-        open={open}
-        autoHideDuration={3000}
-        onClose={handleClose}
-        message="This is a snackbar message"
-        anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
-      />}
-                    
+                    { copiedAccount === item.account_number && <FadeInSection><div className="copy-success">복사되었습니다.</div></FadeInSection>}
                     
                 </div>
             ))}
