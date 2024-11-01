@@ -121,7 +121,7 @@ function Bride() {
               <FadeInSection>
                 <div className='mainsection-text'>
                   <div className='mainsection-text-2'>
-                    김유리 <span className='text2-inner'> 그리고 </span> 함준영
+                    함준영 <span className='text2-inner'> 그리고 </span> 김유리
                   </div>
                   <div className='mainsection-text-3'>2025. 02. 08 토요일 오후 4시 30분<br/>드레스가든 청담</div>
                 </div>
@@ -190,20 +190,15 @@ function Bride() {
             <FadeInSection>
             <div className='location-how-publictrans-section'>
               <div className='location-how-publictrans-section-text1'>위치</div>
-              <div className='location-how2-section-text2'>
-                <div>서울 강남구 영동대로 707</div>
-              </div>
+              <div className='location-how2-section-text2'>서울 강남구 영동대로 707</div>
             </div>
             <div className='location-how-publictrans-section'>
               <div className='location-how-publictrans-section-text1'>대중교통</div>
-              <div className='location-how2-section-text2'>
-                <div>청담역 13번 출구</div>
-              </div>
+              <div className='location-how2-section-text2'>청담역 13번 출구</div>
             </div>
             <div className='location-how2-section'>
               <div className='location-how2-section-text1'>주차</div>
-              <div className='location-how2-section-text2'>
-                건물 내 기계식 주차</div>
+              <div className='location-how2-section-text2'>건물 내 기계식 주차</div>
             </div>
             </FadeInSection>
             <FadeInSection>
