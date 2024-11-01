@@ -8,7 +8,7 @@ import { Container as MapDiv, NaverMap, Marker, useNavermaps} from 'react-naver-
 import '../App.css';
 import ImageModal from '../components/imageModal';
 import AccountModal from '../components/accountModal';
-import mainphoto from '../pages/main.JPG'
+import mainphoto from '../pages/함준영님-34.jpg'
 import subphoto from '../pages/sub.jpg'
 import { Snackbar, Button } from '@mui/material';
 import { motion } from 'framer-motion';
