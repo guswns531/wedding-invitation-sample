@@ -55,6 +55,18 @@ const FadeInSection = ({ children }) => {
 
 
 const accountModal = ({clickedAccountData, setClickedAccountData, copiedAccount, setCopiedAccount}) => {
+  const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+    setOpen(false);
+  };
 
     const delay = ms => new Promise(
     resolve => setTimeout(resolve, ms)
@@ -95,7 +107,13 @@ const accountModal = ({clickedAccountData, setClickedAccountData, copiedAccount,
                         onCopy={() => copyAccountNumber(item.account_number)}
                         >
                             <Button className="each-copy-btn" 
-                            >복사하기</Button>
+                            >복사하기</Button><Snackbar
+            open={open}
+            autoHideDuration={3000}
+            onClose={handleClose}
+            message="This is a snackbar message"
+            anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+          />
                         </CopyToClipboard>
                         
                     </div>
