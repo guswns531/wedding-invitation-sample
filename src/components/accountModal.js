@@ -1,8 +1,21 @@
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import React, { useEffect, useRef, useState } from 'react';
-
+import { Snackbar, Button } from '@mui/material';
 
 const FadeInSection = ({ children }) => {
+  const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+    setOpen(false);
+  };
+  
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
@@ -86,7 +99,13 @@ const accountModal = ({clickedAccountData, setClickedAccountData, copiedAccount,
                         </CopyToClipboard>
                         
                     </div>
-                    { copiedAccount === item.account_number && <FadeInSection><div className="copy-success">복사되었습니다.</div></FadeInSection>}
+                    { copiedAccount === item.account_number && <Snackbar
+        open={open}
+        autoHideDuration={3000}
+        onClose={handleClose}
+        message="This is a snackbar message"
+        anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+      />}
                     
                     
                 </div>
