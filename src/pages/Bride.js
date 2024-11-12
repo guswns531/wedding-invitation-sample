@@ -221,6 +221,8 @@ function Bride() {
               setClickedAccountData={setClickedAccountData}
               copiedAccount={copiedAccount}
               setCopiedAccount={setCopiedAccount}
+              buttonText={buttonText}
+              setButtonText={setButtonText}
               />}
           </div>
           <img src={ment} className='main-image' alt='t1'></img>
