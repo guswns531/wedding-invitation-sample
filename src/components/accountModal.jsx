@@ -42,13 +42,7 @@ const FadeInSection = ({ children }) => {
 
 
 const accountModal = ({clickedAccountData, setClickedAccountData, copiedAccount, setCopiedAccount}) => {
-    const [buttonText, setButtonText] = useState("클릭하세요"); // 초기 문구 설정
-  
-    const handleClick = () => {
-      setButtonText((buttonText) => 
-      buttonText === "클릭하세요" ? "클릭 완료!" : "클릭하세요"
-      );
-    };
+    const [buttonText, setButtonText] = useState("클릭하세요"); 
     
     const delay = ms => new Promise(
     resolve => setTimeout(resolve, ms)
