@@ -60,6 +60,7 @@ function Bride() {
   const [clickedImg, setClickedImg] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(null);
   // state for account modal
+  const [ buttonText, setButtonText ] = useState(null); 
   const [ clickedAccountData, setClickedAccountData ] = useState(null);
   const [ copiedAccount, setCopiedAccount ] = useState(null);
 
