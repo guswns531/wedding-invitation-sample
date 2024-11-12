@@ -60,7 +60,7 @@ function Bride() {
   const [clickedImg, setClickedImg] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(null);
   // state for account modal
-  const [ buttonText, setButtonText ] = useState(null); 
+  const [ buttonText, setButtonText ] = useState("복사하기"); 
   const [ clickedAccountData, setClickedAccountData ] = useState(null);
   const [ copiedAccount, setCopiedAccount ] = useState(null);
 
