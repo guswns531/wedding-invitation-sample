@@ -66,6 +66,12 @@ function Bride() {
 
   const navermaps = useNavermaps()
 
+  const handleClick = () => {
+    setButtonText((buttonText) => 
+    buttonText === "복사하기" ? "복사 완료" : "복사하기"
+    );
+  };
+  
   const handleClick = (item, index) => {
     //setCurrentIndex(index);
     //setClickedImg(item.link);
