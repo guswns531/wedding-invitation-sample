@@ -42,14 +42,6 @@ const FadeInSection = ({ children }) => {
 
 
 const accountModal = ({clickedAccountData, setClickedAccountData, copiedAccount, setCopiedAccount}) => {
-    const [buttonText, setButtonText] = useState("클릭하세요"); // 초기 문구 설정
-
-    const handleClick = () => {
-        setButtonText((buttonText) => 
-        buttonText === "클릭하세요" ? "클릭 완료!" : "클릭하세요"
-        );
-    };
-  
     const delay = ms => new Promise(
     resolve => setTimeout(resolve, ms)
     );
@@ -88,7 +80,7 @@ const accountModal = ({clickedAccountData, setClickedAccountData, copiedAccount,
                         text={item.account_number}
                         onCopy={() => copyAccountNumber(item.account_number)}
                         >
-                            <button onClick={handleClick} className="each-copy-btn">{buttonText}</button>
+                            <button className="each-copy-btn">복사하기</button>
                         </CopyToClipboard>
                     </div>
                 </div>
