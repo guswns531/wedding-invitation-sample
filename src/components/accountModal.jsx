@@ -41,7 +41,7 @@ const FadeInSection = ({ children }) => {
 };
 
 
-const accountModal = ({clickedAccountData, setClickedAccountData, copiedAccount, setCopiedAccount}) => {
+const accountModal = ({clickedAccountData, setClickedAccountData, copiedAccount, setCopiedAccount, buttonText, setButtonText}) => {
     const delay = ms => new Promise(
     resolve => setTimeout(resolve, ms)
     );
