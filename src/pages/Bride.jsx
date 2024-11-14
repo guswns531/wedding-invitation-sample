@@ -74,12 +74,7 @@ function Bride() {
     setClickedAccountData(account_data.data);
   };
 
-  const handleClick = () => {
-    setButtonText((buttonText) => 
-      buttonText === "클릭하세요" ? "클릭 완료!" : "클릭하세요"
-    );
-  };
-  
+
   const handleRotationRight = () => {
     const totalLength = data.data.length;
     if (currentIndex + 1 >= totalLength) {
