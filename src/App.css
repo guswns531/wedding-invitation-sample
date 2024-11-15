@@ -127,9 +127,9 @@
 .invitation-section-text2 {
   margin-bottom: 32px;
   color: #000;
-  text-align: center;
+  text-align: left;
   font-family: GabiaGosran;
-  font-size: 16px;
+  font-size: 9px;
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
@@ -148,14 +148,14 @@
   width: 100%;
   text-align: center;
   font-family: 'GabiaGosran';
-  font-size: 18px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 600;
   line-height: 30px;
 }
 .text3-inner {
   font-family: 'GabiaGosran';
-  font-size: 16px;
+  font-size: 10px;
   margin: 0 5px;
   font-style: normal;
   font-weight: 400;
