@@ -133,12 +133,17 @@ function Bride() {
             </div>
             <div className='invitation-section'>
               <FadeInSection>
-                <div className='invitation-section-text1'>INVITATION</div>
-                
                 <div className='invitation-section-text2'>
+                  마음을 담아<br/>
+                  소중한 분들을 초대합니다.<br/>
+                  ㅡ<br/><br/>
                   나랑 놀자 어디 가지 말고 그리울 틈 없도록<br/>
                   나랑 살자 아주 오랫동안 우리 같이 살자<br/>
-                  검정치마 - 나랑 아니면 中<br/>
+                  검정치마 - 나랑 아니면 中<br/><br/>
+                  같이 있을 때 가장 편안하고 같이 놀 때 제일 즐겁습니다.<br/>
+                  평생 느끼고 싶은 감정이기에 앞으로를 약속하고자 합니다.<br/><br/>
+                  저희의 새로운 시작을 그려나갈 첫 장,<br/>
+                  늘 곁에서 아껴주신 감사한 분들을 모습니다.<br/>
                 </div>
                 <div className='invitation-section-text3'>
                   함형인・최금란<span className='text3-inner'>의 아들</span> 준영
