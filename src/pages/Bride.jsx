@@ -136,8 +136,9 @@ function Bride() {
                 <div className='invitation-section-text1'>INVITATION</div>
                 
                 <div className='invitation-section-text2'>
-                      뭐라고 적을지 추천해줘 졔양 미내양 <br/>
-  
+                  나랑 놀자 어디 가지 말고 그리울 틈 없도록<br/>
+                  나랑 살자 아주 오랫동안 우리 같이 살자<br/>
+                  < 검정치마 - 나랑 아니면 中 >
                 </div>
                 <div className='invitation-section-text3'>
                   함형인・최금란<span className='text3-inner'>의 아들</span> 준영
