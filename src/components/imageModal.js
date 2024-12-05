@@ -1,5 +1,5 @@
-import { ReactComponent as LeftArrow } from '../assets/left.png';
-import { ReactComponent as RightArrow } from '../assets/right.png';
+import { ReactComponent as LeftArrow } from '../assets/arrow-left.svg';
+import { ReactComponent as RightArrow } from '../assets/arrow-right.svg';
 
 const ImageModal = ({ clickedImg, handleRotationRight, handleRotationLeft, setClickedImg }) => {
     const handleClick = (e) => {
