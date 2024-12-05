@@ -175,12 +175,13 @@ function Bride() {
                 <div className="gallery-image-list-wrapper row">
                   {[...Array(12)].map((_, index) => {
                     const imgNumber = index + 1;
+                    const imgSrcMedium = require(`../pages/${imgNumber} Medium.jpeg`);
                     const imgSrc = require(`../pages/${imgNumber}.jpeg`);
                     return (
                       <div key={index} className="col-4">
                         <img
                           className="gallery-image"
-                          src={imgSrc}
+                          src={imgSrcMedium}
                           alt={`Image ${imgNumber}`}
                           onClick={() => handleClick({ link: imgSrc }, index)}
                         />
