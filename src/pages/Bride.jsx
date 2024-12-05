@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
-import data from "../assets/image_data.json";
 import pinIcon from "../assets/location-pin.png";
 import brideAccountData from "../assets/bride_account_number_data.json";
 import groomAccountData from "../assets/groom_account_number_data.json";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { motion } from "framer-motion";
 import {
   Container as MapDiv,
   NaverMap,
@@ -15,15 +15,10 @@ import ImageModal from "../components/imageModal";
 import AccountModal from "../components/accountModal";
 import mainphoto from "../pages/main.jpeg";
 import roadphoto from "../pages/약도.jpg";
-import subphoto from "../pages/약도.jpg";
-
 import navermap from "../pages/naver-map.png";
 import kakaomap from "../pages/kakao-map.png";
 import googlemap from "../pages/google-map.png";
-
 import ment from "../pages/IMG_0236.jpg";
-import { Snackbar, Button } from "@mui/material";
-import { motion } from "framer-motion";
 import Snowfall from "react-snowfall";
 
 const FadeInSection = ({ children }) => {
@@ -36,7 +31,7 @@ const FadeInSection = ({ children }) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setIsVisible(true);
-            observer.unobserve(entry.target); // 중복 관찰 방지
+            observer.unobserve(entry.target);
           }
         });
       },
@@ -46,11 +41,8 @@ const FadeInSection = ({ children }) => {
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
-
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
+      if (sectionRef.current) observer.unobserve(sectionRef.current);
     };
   }, []);
 
@@ -65,9 +57,15 @@ const FadeInSection = ({ children }) => {
 };
 
 function Bride() {
+  // 1부터 12까지의 큰 이미지 배열 (모달용)
+  const galleryImages = [...Array(12)].map((_, index) =>
+    require(`../pages/${index + 1}.jpeg`)
+  );
+
   // state for image modal
   const [clickedImg, setClickedImg] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(null);
+
   // state for account modal
   const [buttonText, setButtonText] = useState("복사하기");
   const [clickedAccountData, setClickedAccountData] = useState(null);
@@ -79,42 +77,33 @@ function Bride() {
     setCurrentIndex(index);
     setClickedImg(item.link);
   };
+
   const accountClick = (account_data) => {
     setClickedAccountData(account_data.data);
   };
 
   const handleRotationRight = () => {
-    const totalLength = data.data.length;
+    const totalLength = galleryImages.length;
     if (currentIndex + 1 >= totalLength) {
       setCurrentIndex(0);
-      const newUrl = data.data[0].link;
-      setClickedImg(newUrl);
-      return;
+      setClickedImg(galleryImages[0]);
+    } else {
+      const newIndex = currentIndex + 1;
+      setCurrentIndex(newIndex);
+      setClickedImg(galleryImages[newIndex]);
     }
-    const newIndex = currentIndex + 1;
-    const newUrl = data.data.filter((item) => {
-      return data.data.indexOf(item) === newIndex;
-    });
-    const newItem = newUrl[0].link;
-    setClickedImg(newItem);
-    setCurrentIndex(newIndex);
   };
 
   const handleRotationLeft = () => {
-    const totalLength = data.data.length;
+    const totalLength = galleryImages.length;
     if (currentIndex === 0) {
       setCurrentIndex(totalLength - 1);
-      const newUrl = data.data[totalLength - 1].link;
-      setClickedImg(newUrl);
-      return;
+      setClickedImg(galleryImages[totalLength - 1]);
+    } else {
+      const newIndex = currentIndex - 1;
+      setCurrentIndex(newIndex);
+      setClickedImg(galleryImages[newIndex]);
     }
-    const newIndex = currentIndex - 1;
-    const newUrl = data.data.filter((item) => {
-      return data.data.indexOf(item) === newIndex;
-    });
-    const newItem = newUrl[0].link;
-    setClickedImg(newItem);
-    setCurrentIndex(newIndex);
   };
 
   return (
@@ -123,7 +112,6 @@ function Bride() {
         <div className="row justify-content-md-center">
           <Snowfall color="white" snowflakeCount={50} />
           <div className="col col-md-2 col-lg-3"></div>
-
           <div className="col-md">
             <div className="mainsection">
               <div>
@@ -169,6 +157,7 @@ function Bride() {
                 </div>
               </FadeInSection>
             </div>
+
             <div className="gallery-section">
               <FadeInSection>
                 <div className="gallery-section-text">GALLERY</div>
@@ -176,7 +165,7 @@ function Bride() {
                   {[...Array(12)].map((_, index) => {
                     const imgNumber = index + 1;
                     const imgSrcMedium = require(`../pages/${imgNumber} Medium.jpeg`);
-                    const imgSrc = require(`../pages/${imgNumber}.jpeg`);
+                    const imgSrc = galleryImages[index];
                     return (
                       <div key={index} className="col-4">
                         <img
@@ -199,6 +188,7 @@ function Bride() {
                 )}
               </FadeInSection>
             </div>
+
             <div className="location-section">
               <FadeInSection>
                 <div className="location-section-text1">LOCATION</div>
@@ -208,17 +198,29 @@ function Bride() {
               <div>
                 <img src={roadphoto} className="main-image" alt="t1"></img>
               </div>
-              <div class="form-group">
-                <div class="col-md-12">
-                  <div class="my-3 text-center">
+              <div className="form-group">
+                <div className="col-md-12">
+                  <div className="my-3 text-center">
                     <a href="https://naver.me/5PS2KQ4T">
-                      <img className="map-icon" src={navermap} />
+                      <img
+                        className="map-icon"
+                        src={navermap}
+                        alt="naver map"
+                      />
                     </a>
                     <a href="https://kko.kakao.com/c3O6C6YDZq">
-                      <img className="map-icon" src={kakaomap} />
+                      <img
+                        className="map-icon"
+                        src={kakaomap}
+                        alt="kakao map"
+                      />
                     </a>
                     <a href="https://maps.app.goo.gl/fdcBbk2fv1ghw1mX8">
-                      <img className="map-icon" src={googlemap} />
+                      <img
+                        className="map-icon"
+                        src={googlemap}
+                        alt="google map"
+                      />
                     </a>
                   </div>
                 </div>
