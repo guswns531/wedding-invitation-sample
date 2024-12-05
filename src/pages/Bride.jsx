@@ -8,7 +8,7 @@ import { Container as MapDiv, NaverMap, Marker, useNavermaps} from 'react-naver-
 import '../App.css';
 import ImageModal from '../components/imageModal';
 import AccountModal from '../components/accountModal';
-import mainphoto from '../pages/KakaoTalk_Photo_005.jpeg'
+import mainphoto from '../pages/main.jpeg'
 import roadphoto from '../pages/약도.jpg'
 import subphoto from '../pages/약도.jpg'
 import ment from '../pages/약도.jpg'
@@ -118,6 +118,10 @@ function Bride() {
           <div className="col col-md-2 col-lg-3">
           </div>
 
+          <div className="row justify-content-center align-items-center">
+
+
+          
           <div className="col-md">
             <div className='mainsection'>
               <div>
@@ -148,7 +152,7 @@ function Bride() {
                   장영섭・이은우<span className='text3-inner'>의 아들</span> 신랑 현준
                 </div>
                 <div className='invitation-section-text3'>
-                  서상현・이미영<span className='text3-inner'>의 딸</span> 신부 현준
+                  서상현・이미영<span className='text3-inner'>의 딸</span> 신부 혜림
                 </div>
               </FadeInSection>
             </div>
@@ -247,6 +251,7 @@ function Bride() {
               />}
           </div>
           <img src={ment} className='main-image' alt='t1'></img>
+          </div>
           <div className="col col-md-2 col-lg-3">
           </div>
         </div>
