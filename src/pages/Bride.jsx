@@ -20,7 +20,7 @@ import kakaomap from "../pages/kakao-map.png";
 import googlemap from "../pages/google-map.png";
 import ment from "../pages/IMG_0236.jpg";
 import Snowfall from "react-snowfall";
-import { AddToCalendarButton } from "add-to-calendar-button-react";
+import "add-to-calendar-button";
 
 const FadeInSection = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false);
