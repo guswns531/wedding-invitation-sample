@@ -10,8 +10,8 @@ import ImageModal from '../components/imageModal';
 import AccountModal from '../components/accountModal';
 import mainphoto from '../pages/KakaoTalk_Photo_005.jpeg'
 import roadphoto from '../pages/약도.jpg'
-import subphoto from '../pages/sub.jpg'
-import ment from '../pages/IMG_0236.jpg'
+import subphoto from '../pages/약도.jpg'
+import ment from '../pages/약도.jpg'
 import { Snackbar, Button } from '@mui/material';
 import { motion } from 'framer-motion';
 import Snowfall from 'react-snowfall';
