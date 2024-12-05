@@ -65,56 +65,43 @@ const FadeInSection = ({ children }) => {
 };
 
 function Bride() {
-  // state for image modal
+  // 이미지 데이터
+  const imageFiles = Array.from({ length: 12 }, (_, i) => `${i + 1}.jpeg`);
+  const images = imageFiles.map((file) => ({
+    link: require(`../pages/${file}`), // 동적으로 이미지 경로 생성
+    text: `Image ${file}`,
+  }));
+
   const [clickedImg, setClickedImg] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(null);
-  // state for account modal
-  const [buttonText, setButtonText] = useState("복사하기");
-  const [clickedAccountData, setClickedAccountData] = useState(null);
-  const [copiedAccount, setCopiedAccount] = useState(null);
-
-  const navermaps = useNavermaps();
 
   const handleClick = (item, index) => {
     setCurrentIndex(index);
     setClickedImg(item.link);
   };
-  const accountClick = (account_data) => {
-    setClickedAccountData(account_data.data);
-  };
 
   const handleRotationRight = () => {
-    const totalLength = data.data.length;
+    const totalLength = images.length;
     if (currentIndex + 1 >= totalLength) {
       setCurrentIndex(0);
-      const newUrl = data.data[0].link;
-      setClickedImg(newUrl);
+      setClickedImg(images[0].link);
       return;
     }
     const newIndex = currentIndex + 1;
-    const newUrl = data.data.filter((item) => {
-      return data.data.indexOf(item) === newIndex;
-    });
-    const newItem = newUrl[0].link;
-    setClickedImg(newItem);
     setCurrentIndex(newIndex);
+    setClickedImg(images[newIndex].link);
   };
 
   const handleRotationLeft = () => {
-    const totalLength = data.data.length;
+    const totalLength = images.length;
     if (currentIndex === 0) {
       setCurrentIndex(totalLength - 1);
-      const newUrl = data.data[totalLength - 1].link;
-      setClickedImg(newUrl);
+      setClickedImg(images[totalLength - 1].link);
       return;
     }
     const newIndex = currentIndex - 1;
-    const newUrl = data.data.filter((item) => {
-      return data.data.indexOf(item) === newIndex;
-    });
-    const newItem = newUrl[0].link;
-    setClickedImg(newItem);
     setCurrentIndex(newIndex);
+    setClickedImg(images[newIndex].link);
   };
 
   return (
@@ -173,31 +160,31 @@ function Bride() {
               <FadeInSection>
                 <div className="gallery-section-text">GALLERY</div>
               </FadeInSection>
-            </div>
-            <FadeInSection>
-              <div>
-                <div className="gallery-image-list-wrapper row">
-                  {data.data.map((item, index) => (
-                    <div key={index} className="col-4">
-                      <img
-                        className="gallery-image"
-                        src={subphoto}
-                        alt={item.text}
-                        onClick={() => handleClick(item, index)}
-                      />
-                    </div>
-                  ))}
+              <FadeInSection>
+                <div>
+                  <div className="gallery-image-list-wrapper row">
+                    {images.map((item, index) => (
+                      <div key={index} className="col-4">
+                        <img
+                          className="gallery-image"
+                          src={item.link}
+                          alt={item.text}
+                          onClick={() => handleClick(item, index)}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                  {clickedImg && (
+                    <ImageModal
+                      clickedImg={clickedImg}
+                      handleRotationRight={handleRotationRight}
+                      handleRotationLeft={handleRotationLeft}
+                      setClickedImg={setClickedImg}
+                    />
+                  )}
                 </div>
-                {clickedImg && (
-                  <ImageModal
-                    clickedImg={clickedImg}
-                    handleRotationRight={handleRotationRight}
-                    handleRotationLeft={handleRotationLeft}
-                    setClickedImg={setClickedImg}
-                  />
-                )}
-              </div>
-            </FadeInSection>
+              </FadeInSection>
+            </div>
             <div className="location-section">
               <FadeInSection>
                 <div className="location-section-text1">LOCATION</div>
