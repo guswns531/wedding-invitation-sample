@@ -1,10 +1,22 @@
 {
     "data" : [
         {
+            "title" : "신부 아버님 계좌",
+            "bank_name" : "신한",
+            "account_owner" : "--",
+            "account_number" : "----------"
+        },
+        {
+            "title" : "신부 어머님 계좌",
+            "bank_name" : "신한",
+            "account_owner" : "--",
+            "account_number" : "----------"
+        },
+        {
             "title" : "신부 계좌",
             "bank_name" : "신한",
-            "account_owner" : "김유리",
-            "account_number" : "110231632971"
+            "account_owner" : "서혜림",
+            "account_number" : "----------"
         }
     ]
 }

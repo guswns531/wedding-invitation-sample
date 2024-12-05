@@ -1,10 +1,22 @@
 {
     "data" : [
         {
+            "title" : "신랑 아버님 계좌",
+            "bank_name" : "신한",
+            "account_owner" : "--",
+            "account_number" : "----------"
+        },
+        {
+            "title" : "신랑 어머님 계좌",
+            "bank_name" : "신한",
+            "account_owner" : "--",
+            "account_number" : "----------"
+        },
+        {
             "title" : "신랑 계좌",
-            "bank_name" : "새마을",
-            "account_owner" : "함준영",
-            "account_number" : "9003265449822"
+            "bank_name" : "신한",
+            "account_owner" : "장현준",
+            "account_number" : "110404895479"
         }
     ]
 }
