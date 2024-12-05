@@ -117,11 +117,7 @@ function Bride() {
           <Snowfall color="white" snowflakeCount={50}/>
           <div className="col col-md-2 col-lg-3">
           </div>
-
-          <div className="row justify-content-center align-items-center">
-
-
-          
+    
           <div className="col-md">
             <div className='mainsection'>
               <div>
@@ -205,7 +201,7 @@ function Bride() {
             <div>
                 <img src={roadphoto} className='main-image' alt='t1'></img>
             </div>
-            <div className='location-how-publictrans-box'>
+            {/* <div className='location-how-publictrans-box'>
               <a 
                 href="https://map.naver.com/?eText=%EB%8D%94%EB%B2%A0%EB%84%A4%EC%B9%98%EC%95%84&eType=SITE_1&edid=13556780&elng=cd9a06a42da652f8d43a6fae243ec63b&elat=5c5639f51945bb091e100c1d76746711"
                 target="_blank" 
@@ -215,6 +211,32 @@ function Bride() {
                 <span className='naver-link-icon'>📍</span>
                 네이버 빠른길 찾기
               </a>
+            </div> */}
+            <div class="form-group">
+                <div class="col-md-12">
+                    <div class="my-3 text-center">
+                        <a href="http://naver.me/5pTy3HCa">
+                            <img alt="naver-map" class="map-icon" id="naver-map"
+                                  src="../pages/naver-map.png"/>
+                        </a>
+                        <a href="http://dmaps.kr/2bms8">
+                            <img alt="kakao-map" class="map-icon" id="kakao-map"
+                                  src="../pages/kakao-map.png"/>
+                        </a>
+                        <a href="https://maps.app.goo.gl/jfDxw">
+                            <img alt="google-map" class="map-icon" id="google-map"
+                                  src="../pages/google-map.png"/>
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <label style="font-family: 'Noto Serif KR', serif; font-size: 15px;">
+                            셔틀버스 - 센텀시티역 4번출구앞에서 15분 간격으로 운행
+                        </label>
+                    </div>
+                    <div class="my-3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.297439052569!2d129.1238775160104!3d35.1741384652207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356892c2513ecf5d%3A0x7d362ece2091e2f8!2z7IS87YWA7IKs7J207Ja47Iqk7YyM7YGsIOy7qOuypOyFmO2ZgA!5e0!3m2!1sko!2skr!4v1554092125630!5m2!1sko!2skr" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
             <div className='location-how-publictrans-section'>
               <div className='location-how-publictrans-section-text1'>위치</div>
@@ -251,7 +273,6 @@ function Bride() {
               />}
           </div>
           <img src={ment} className='main-image' alt='t1'></img>
-          </div>
           <div className="col col-md-2 col-lg-3">
           </div>
         </div>
