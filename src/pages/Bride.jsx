@@ -125,23 +125,19 @@ function Bride() {
                     장현준 <span className="text2-inner"> 그리고 </span> 서혜림
                   </div>
                   <div>
-                    <img src={callphoto} className="main-image" alt="t1"></img>
+                    <img
+                      src={callphoto}
+                      className="main-image"
+                      alt="t1"
+                      style={{ width: "40%" }}
+                    />
                   </div>
                   <div className="mainsection-text-3">
                     2025. 04. 12 토요일 오전 11시
                     <br />
                     잠실 더 베네치아
                   </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
-                    className="location-how2-section-text2"
-                  >
-                    캘린더 추가하기
-                  </div>
+
                   <div
                     style={{
                       display: "flex",
@@ -163,6 +159,16 @@ function Bride() {
                       buttonStyle="round"
                       lightMode="bodyScheme"
                     ></add-to-calendar-button>
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    className="location-how2-section-text2"
+                  >
+                    캘린더 자동 추가하기
                   </div>
                 </div>
               </FadeInSection>
@@ -260,6 +266,16 @@ function Bride() {
                       />
                     </a>
                   </div>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                  className="location-how2-section-text2"
+                >
+                  찾아오는 길 찾기
                 </div>
               </div>
               <div className="location-how-publictrans-section">
