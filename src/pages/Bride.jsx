@@ -172,21 +172,21 @@ function Bride() {
             <div className="gallery-section">
               <FadeInSection>
                 <div className="gallery-section-text">GALLERY</div>
-              </FadeInSection>
-            </div>
-            <FadeInSection>
-              <div>
                 <div className="gallery-image-list-wrapper row">
-                  {data.data.map((item, index) => (
-                    <div key={index} className="col-4">
-                      <img
-                        className="gallery-image"
-                        src={subphoto}
-                        alt={item.text}
-                        onClick={() => handleClick(item, index)}
-                      />
-                    </div>
-                  ))}
+                  {[...Array(12)].map((_, index) => {
+                    const imgNumber = index + 1;
+                    const imgSrc = require(`../pages/${imgNumber}.jpeg`);
+                    return (
+                      <div key={index} className="col-4">
+                        <img
+                          className="gallery-image"
+                          src={imgSrc}
+                          alt={`Image ${imgNumber}`}
+                          onClick={() => handleClick({ link: imgSrc }, index)}
+                        />
+                      </div>
+                    );
+                  })}
                 </div>
                 {clickedImg && (
                   <ImageModal
@@ -196,8 +196,8 @@ function Bride() {
                     setClickedImg={setClickedImg}
                   />
                 )}
-              </div>
-            </FadeInSection>
+              </FadeInSection>
+            </div>
             <div className="location-section">
               <FadeInSection>
                 <div className="location-section-text1">LOCATION</div>
