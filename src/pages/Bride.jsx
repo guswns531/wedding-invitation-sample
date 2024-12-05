@@ -59,7 +59,7 @@ const FadeInSection = ({ children }) => {
 function Bride() {
   // 1부터 12까지의 큰 이미지 배열 (모달용)
   const galleryImages = [...Array(12)].map((_, index) =>
-    require(`../pages/${index + 1}.jpeg`)
+    require(`../pages/${index + 1} 2.jpeg`)
   );
 
   // state for image modal
