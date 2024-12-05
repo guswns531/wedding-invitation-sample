@@ -21,7 +21,7 @@ import navermap from "../pages/naver-map.png";
 import kakaomap from "../pages/kakao-map.png";
 import googlemap from "../pages/google-map.png";
 
-import ment from "../pages/약도.jpg";
+import ment from "../pages/IMG_0236.jpg";
 import { Snackbar, Button } from "@mui/material";
 import { motion } from "framer-motion";
 import Snowfall from "react-snowfall";
@@ -76,8 +76,8 @@ function Bride() {
   const navermaps = useNavermaps();
 
   const handleClick = (item, index) => {
-    //setCurrentIndex(index);
-    //setClickedImg(item.link);
+    setCurrentIndex(index);
+    setClickedImg(item.link);
   };
   const accountClick = (account_data) => {
     setClickedAccountData(account_data.data);
@@ -203,34 +203,9 @@ function Bride() {
                 <div className="location-section-text1">LOCATION</div>
               </FadeInSection>
             </div>
-            <div className="location-map-section">
-              <MapDiv
-                style={{
-                  width: "100%",
-                  height: "350px",
-                }}
-              >
-                <NaverMap
-                  defaultCenter={new navermaps.LatLng(37.5206757, 127.0558977)}
-                  defaultZoom={18}
-                ></NaverMap>
-                <div></div>
-              </MapDiv>
-            </div>
             <FadeInSection>
               <div>
                 <img src={roadphoto} className="main-image" alt="t1"></img>
-              </div>
-              <div className="location-how-publictrans-box">
-                <a
-                  href="https://map.naver.com/?eText=%EB%8D%94%EB%B2%A0%EB%84%A4%EC%B9%98%EC%95%84&eType=SITE_1&edid=13556780&elng=cd9a06a42da652f8d43a6fae243ec63b&elat=5c5639f51945bb091e100c1d76746711"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="naver-link-box"
-                >
-                  <span className="naver-link-icon">📍</span>
-                  네이버 빠른길 찾기
-                </a>
               </div>
               <div class="form-group">
                 <div class="col-md-12">
@@ -261,11 +236,11 @@ function Bride() {
                 </div>
                 <div className="location-how2-section-text2">
                   {" "}
-                  2호선 잠실역 → ⑧번 출구 하차 도보 2분거리
+                  2호선 잠실역 → ⑧번 출구 도보 2분거리
                 </div>
                 <div className="location-how2-section-text2">
                   {" "}
-                  8호선 잠실역 → ⑨번 출구 하차 도보 1분거리
+                  8호선 잠실역 → ⑨번 출구 도보 1분거리
                 </div>
               </div>
               <div className="location-how-publictrans-section">
