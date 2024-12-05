@@ -15,6 +15,7 @@ import ImageModal from "../components/imageModal";
 import AccountModal from "../components/accountModal";
 import mainphoto from "../pages/main.jpeg";
 import roadphoto from "../pages/약도.jpg";
+import callphoto from "../assets/call.png";
 import navermap from "../pages/naver-map.png";
 import kakaomap from "../pages/kakao-map.png";
 import googlemap from "../pages/google-map.png";
@@ -123,12 +124,22 @@ function Bride() {
                   <div className="mainsection-text-2">
                     장현준 <span className="text2-inner"> 그리고 </span> 서혜림
                   </div>
+                  <div>
+                    <img src={callphoto} className="main-image" alt="t1"></img>
+                  </div>
                   <div className="mainsection-text-3">
                     2025. 04. 12 토요일 오전 11시
                     <br />
                     잠실 더 베네치아
                   </div>
-                  <div className="location-how2-section-text2">
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    className="location-how2-section-text2"
+                  >
                     캘린더 추가하기
                   </div>
                   <div
