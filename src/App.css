@@ -383,8 +383,10 @@
   background: rgba(27, 27, 27, 0.541);
   display: flex;
   align-items: center;
+  justify-content: center; /* 수평 정렬을 위해 추가 */
   z-index: 100;
 }
+
 /* modal - image */
 .overlay img {
   display: block;
@@ -394,6 +396,7 @@
   box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
   z-index: 999;
 }
+
 .overlay > span {
   position: absolute;
   top: 20px;
@@ -403,16 +406,20 @@
   z-index: 999;
   cursor: pointer;
 }
+
 .overlay-arrows_left {
   display: flex;
   background-color: #ffffff;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   width: 30px;
   height: 30px;
-  left: 0;
+  left: 20px; /* 화면 좌측에서 약간 떨어지게 조정 */
   z-index: 999;
+  cursor: pointer;
 }
 
 .overlay-arrows_left svg {
@@ -420,21 +427,24 @@
   height: 30px;
 }
 
-.overlay-arrows_right svg {
-  width: 30px;
-  height: 30px;
-}
-
 .overlay-arrows_right {
   display: flex;
   background-color: #ffffff;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  right: 0;
+  right: 20px; /* 화면 우측에서 약간 떨어지게 조정 */
+  top: 50%;
+  transform: translateY(-50%);
   width: 30px;
   height: 30px;
-  top: 50%;
   z-index: 999;
+  cursor: pointer;
+}
+
+.overlay-arrows_right svg {
+  width: 30px;
+  height: 30px;
 }
 
 /* modal - account */
