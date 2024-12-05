@@ -9,6 +9,7 @@ import '../App.css';
 import ImageModal from '../components/imageModal';
 import AccountModal from '../components/accountModal';
 import mainphoto from '../pages/KakaoTalk_Photo_005.jpeg'
+import roadphoto from '../pages/약도.jpg'
 import subphoto from '../pages/sub.jpg'
 import ment from '../pages/IMG_0236.jpg'
 import { Snackbar, Button } from '@mui/material';
@@ -139,7 +140,7 @@ function Bride() {
                   ㅡ<br/><br/>
                   그냥 매일 손 잡고 걸을 수 있는<br/>
                   여유로운 저녁이 있는 것<br/>
-                  지친 하루의 끝마다 돌아와 꼭 함께하는 것<br/><br/>
+                  지친 하루의 끝마다 돌아와 꼭 함께하는 것<br/>
                   잠시 마주앉아 서로 이야기 들어줄 수 있는 것<br/>
                   - 내 꿈은 당신과 나태하게 사는것. 슌 -<br/><br/>
                 </div>
@@ -197,17 +198,32 @@ function Bride() {
               </MapDiv>
             </div>
             <FadeInSection>
+            <div>
+                <img src={roadphoto} className='main-image' alt='t1'></img>
+            </div>
+            <div className='location-how-publictrans-box'>
+              <a 
+                href="https://map.naver.com/?eText=%EB%8D%94%EB%B2%A0%EB%84%A4%EC%B9%98%EC%95%84&eType=SITE_1&edid=13556780&elng=cd9a06a42da652f8d43a6fae243ec63b&elat=5c5639f51945bb091e100c1d76746711"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className='naver-link-box'
+              >
+                <span className='naver-link-icon'>📍</span>
+                네이버 빠른길 찾기
+              </a>
+            </div>
             <div className='location-how-publictrans-section'>
               <div className='location-how-publictrans-section-text1'>위치</div>
-              <div className='location-how2-section-text2'>서울 강남구 영동대로 707</div>
+              <div className='location-how2-section-text2'>서울시 송파구 올림픽로35다길 42 루터회관 3층 "더베네치아"</div>
             </div>
             <div className='location-how-publictrans-section'>
               <div className='location-how-publictrans-section-text1'>대중교통</div>
-              <div className='location-how2-section-text2'>청담역 13번 출구</div>
+              <div className='location-how2-section-text2'> 2호선 잠실역 → ⑧번 출구 하차 도보 2분거리</div>
+              <div className='location-how2-section-text2'> 8호선 잠실역 → ⑨번 출구 하차 도보 1분거리</div>
             </div>
             <div className='location-how-publictrans-section'>
               <div className='location-how-publictrans-section-text1'>주차</div>
-              <div className='location-how2-section-text2'>건물 내 기계식 주차</div>
+              <div className='location-how2-section-text2'>루터회관 지하주차장 이용</div>
             </div>
             </FadeInSection>
             <FadeInSection>
