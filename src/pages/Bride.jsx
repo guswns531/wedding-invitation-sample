@@ -20,6 +20,7 @@ import kakaomap from "../pages/kakao-map.png";
 import googlemap from "../pages/google-map.png";
 import ment from "../pages/IMG_0236.jpg";
 import Snowfall from "react-snowfall";
+import { AddToCalendarButton } from "add-to-calendar-button-react";
 
 const FadeInSection = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -110,7 +111,7 @@ function Bride() {
     <div className="outside">
       <div className="main container">
         <div className="row justify-content-md-center">
-          <Snowfall color="#FFC0CB" snowflakeCount={50} />
+          <Snowfall color="white" snowflakeCount={50} />
           <div className="col col-md-2 col-lg-3"></div>
           <div className="col-md">
             <div className="mainsection">
@@ -127,6 +128,20 @@ function Bride() {
                     <br />
                     잠실 더 베네치아
                   </div>
+                  <add-to-calendar-button
+                    name="장현준・서혜림 결혼식"
+                    startDate="2025-04-12"
+                    endDate="2025-04-12"
+                    startTime="11:00"
+                    endTime="13:00"
+                    timeZone="Asia/Seoul"
+                    description="[url]https://hyeonjun-hyerim-wedding-invitation.vercel.app//|Click here![/url]"
+                    options="'Apple','Google','iCal','Outlook.com','Yahoo'"
+                    buttonsList
+                    hideTextLabelButton
+                    buttonStyle="round"
+                    lightMode="bodyScheme"
+                  ></add-to-calendar-button>
                 </div>
               </FadeInSection>
             </div>
