@@ -16,6 +16,11 @@ import AccountModal from "../components/accountModal";
 import mainphoto from "../pages/main.jpeg";
 import roadphoto from "../pages/약도.jpg";
 import subphoto from "../pages/약도.jpg";
+
+import navermap from "../pages/naver-map.png";
+import kakaomap from "../pages/kakao-map.png";
+import googlemap from "../pages/google-map.png";
+
 import ment from "../pages/약도.jpg";
 import { Snackbar, Button } from "@mui/material";
 import { motion } from "framer-motion";
@@ -231,28 +236,13 @@ function Bride() {
                 <div class="col-md-12">
                   <div class="my-3 text-center">
                     <a href="https://naver.me/5PS2KQ4T">
-                      <img
-                        alt="naver-map"
-                        class="map-icon"
-                        id="naver-map"
-                        src="../pages/naver-map.png"
-                      />
+                      <img className="map-icon" src={navermap} />
                     </a>
                     <a href="https://kko.kakao.com/c3O6C6YDZq">
-                      <img
-                        alt="kakao-map"
-                        class="map-icon"
-                        id="kakao-map"
-                        src="../pages/kakao-map.png"
-                      />
+                      <img className="map-icon" src={kakaomap} />
                     </a>
                     <a href="https://maps.app.goo.gl/fdcBbk2fv1ghw1mX8">
-                      <img
-                        alt="google-map"
-                        class="map-icon"
-                        id="google-map"
-                        src="../pages/google-map.png"
-                      />
+                      <img className="map-icon" src={googlemap} />
                     </a>
                   </div>
                 </div>
