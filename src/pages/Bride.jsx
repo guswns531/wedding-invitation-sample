@@ -8,7 +8,7 @@ import { Container as MapDiv, NaverMap, Marker, useNavermaps} from 'react-naver-
 import '../App.css';
 import ImageModal from '../components/imageModal';
 import AccountModal from '../components/accountModal';
-import mainphoto from '../pages/함준영님-34.jpg'
+import mainphoto from '../pages/KakaoTalk_Photo_005.jpeg'
 import subphoto from '../pages/sub.jpg'
 import ment from '../pages/IMG_0236.jpg'
 import { Snackbar, Button } from '@mui/material';
@@ -125,31 +125,29 @@ function Bride() {
               <FadeInSection>
                 <div className='mainsection-text'>
                   <div className='mainsection-text-2'>
-                    함준영 <span className='text2-inner'> 그리고 </span> 김유리
+                    장현준 <span className='text2-inner'> 그리고 </span> 서혜림
                   </div>
-                  <div className='mainsection-text-3'>2025. 02. 08 토요일 오후 4시 30분<br/>드레스가든 청담</div>
+                  <div className='mainsection-text-3'>2025. 04. 12 토요일 오전 11시<br/>잠실 더 베네치아</div>
                 </div>
               </FadeInSection>
             </div>
             <div className='invitation-section'>
               <FadeInSection>
                 <div className='invitation-section-text2'>
-                  마음을 담아<br/>
-                  소중한 분들을 초대합니다.<br/>
+                  새로 시작하는 이 자리에 오셔서<br/>
+                  축복이 가득하길 함께해 주시기 바랍니다.<br/>
                   ㅡ<br/><br/>
-                  나랑 놀자 어디 가지 말고 그리울 틈 없도록<br/>
-                  나랑 살자 아주 오랫동안 우리 같이 살자<br/>
-                  검정치마 - 나랑 아니면 中<br/><br/>
-                  같이 있을 때 가장 편안하고 같이 놀 때 제일 즐겁습니다.<br/>
-                  평생 느끼고 싶은 감정이기에 앞으로를 약속하고자 합니다.<br/><br/>
-                  저희의 새로운 시작을 그려나갈 첫 장,<br/>
-                  늘 곁에서 아껴주신 감사한 분들을 모습니다.<br/>
+                  그냥 매일 손 잡고 걸을 수 있는<br/>
+                  여유로운 저녁이 있는 것<br/>
+                  지친 하루의 끝마다 돌아와 꼭 함께하는 것<br/><br/>
+                  잠시 마주앉아 서로 이야기 들어줄 수 있는 것<br/>
+                  - 내 꿈은 당신과 나태하게 사는것. 슌 -<br/><br/>
                 </div>
                 <div className='invitation-section-text3'>
-                  함형인・최금란<span className='text3-inner'>의 아들</span> 준영
+                  장영섭・이은우<span className='text3-inner'>의 아들</span> 신랑 현준
                 </div>
                 <div className='invitation-section-text3'>
-                  김기태・박재영<span className='text3-inner'>의 딸</span> 유리
+                  서상현・이미영<span className='text3-inner'>의 딸</span> 신부 현준
                 </div>
               </FadeInSection>
             </div>
