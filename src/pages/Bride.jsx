@@ -124,20 +124,34 @@ function Bride() {
                   <div className="mainsection-text-2">
                     장현준 <span className="text2-inner"> 그리고 </span> 서혜림
                   </div>
-                  <div>
-                    <img
-                      src={callphoto}
-                      className="main-image"
-                      alt="t1"
-                      style={{ width: "40%" }}
-                    />
-                  </div>
                   <div className="mainsection-text-3">
                     2025. 04. 12 토요일 오전 11시
                     <br />
                     잠실 더 베네치아
                   </div>
-
+                  <div>
+                    <img
+                      src={callphoto}
+                      className="main-image"
+                      alt="t1"
+                      style={{
+                        width: "40%",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    />
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    className="location-how2-section-text2"
+                  >
+                    캘린더 자동 추가하기
+                  </div>
                   <div
                     style={{
                       display: "flex",
@@ -159,16 +173,6 @@ function Bride() {
                       buttonStyle="round"
                       lightMode="bodyScheme"
                     ></add-to-calendar-button>
-                  </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
-                    className="location-how2-section-text2"
-                  >
-                    캘린더 자동 추가하기
                   </div>
                 </div>
               </FadeInSection>
@@ -239,7 +243,16 @@ function Bride() {
             </div>
             <FadeInSection>
               <div>
-                <img src={roadphoto} className="main-image" alt="t1"></img>
+                <img
+                  src={roadphoto}
+                  className="main-image"
+                  alt="t1"
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                ></img>
               </div>
               <div className="form-group">
                 <div className="col-md-12">
