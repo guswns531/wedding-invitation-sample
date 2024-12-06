@@ -129,56 +129,56 @@ function Bride() {
                     <br />
                     잠실 더 베네치아
                   </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
-                  >
-                    <img
-                      src={callphoto}
-                      className="main-image"
-                      alt="t1"
-                      style={{
-                        width: "30%",
-                      }}
-                    />
-                  </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
-                    className="location-how2-section-text2"
-                  >
-                    캘린더 자동 추가하기
-                  </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
-                  >
-                    <add-to-calendar-button
-                      name="장현준・서혜림 결혼식"
-                      startDate="2025-04-12"
-                      endDate="2025-04-12"
-                      startTime="11:00"
-                      endTime="13:00"
-                      timeZone="Asia/Seoul"
-                      description="[url]https://hyeonjun-hyerim-wedding-invitation.vercel.app//|Click here![/url]"
-                      options="'Apple','Google','iCal','Outlook.com'"
-                      buttonsList
-                      hideTextLabelButton
-                      buttonStyle="round"
-                      lightMode="bodyScheme"
-                    ></add-to-calendar-button>
-                  </div>
                 </div>
               </FadeInSection>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <img
+                src={callphoto}
+                className="main-image"
+                alt="t1"
+                style={{
+                  width: "40%",
+                }}
+              />
+            </div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              className="location-how2-section-text2"
+            >
+              캘린더 자동 추가하기
+            </div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <add-to-calendar-button
+                name="장현준・서혜림 결혼식"
+                startDate="2025-04-12"
+                endDate="2025-04-12"
+                startTime="11:00"
+                endTime="13:00"
+                timeZone="Asia/Seoul"
+                description="[url]https://hyeonjun-hyerim-wedding-invitation.vercel.app//|Click here![/url]"
+                options="'Apple','Google','iCal','Outlook.com'"
+                buttonsList
+                hideTextLabelButton
+                buttonStyle="round"
+                lightMode="bodyScheme"
+              ></add-to-calendar-button>
             </div>
             <div className="invitation-section">
               <FadeInSection>
