@@ -24,7 +24,7 @@
 .row {
   margin-left: 0px;
   margin-right: 0px;
-  max-width: 80%;
+  max-width: 1000px;
 }
 .container {
   width: 90%; /* 페이지 크기 조정 */
