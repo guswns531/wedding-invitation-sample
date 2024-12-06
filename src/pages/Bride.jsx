@@ -182,37 +182,38 @@ function Bride() {
                 캘린더 자동 추가하기
               </div>
             </div>
-            <div className="invitation-section">
-              <FadeInSection>
-                <div className="invitation-section-text2">
-                  새로 시작하는 이 자리에 오셔서
-                  <br />
-                  축복이 가득하길 함께해 주시기 바랍니다.
-                  <br />
-                  ㅡ<br />
-                  <br />
-                  그냥 매일 손 잡고 걸을 수 있는
-                  <br />
-                  여유로운 저녁이 있는 것<br />
-                  지친 하루의 끝마다 돌아와 꼭 함께하는 것<br />
-                  잠시 마주앉아 서로 이야기 들어줄 수 있는 것<br />
-                  - 내 꿈은 당신과 나태하게 사는것. 슌 -<br />
-                  <br />
-                </div>
-                <div className="invitation-section-text3">
-                  장영섭・이은우<span className="text3-inner">의 아들</span>{" "}
-                  신랑 현준
-                </div>
-                <div className="invitation-section-text3">
-                  서상현・이미영<span className="text3-inner">의 딸</span> 신부
-                  혜림
-                </div>
-              </FadeInSection>
+            <div className="mainsection">
+              <div className="invitation-section">
+                <FadeInSection>
+                  <div className="invitation-section-text2">
+                    새로 시작하는 이 자리에 오셔서
+                    <br />
+                    축복이 가득하길 함께해 주시기 바랍니다.
+                    <br />
+                    ㅡ<br />
+                    <br />
+                    그냥 매일 손 잡고 걸을 수 있는
+                    <br />
+                    여유로운 저녁이 있는 것<br />
+                    지친 하루의 끝마다 돌아와 꼭 함께하는 것<br />
+                    잠시 마주앉아 서로 이야기 들어줄 수 있는 것<br />
+                    - 내 꿈은 당신과 나태하게 사는것. 슌 -<br />
+                    <br />
+                  </div>
+                  <div className="invitation-section-text3">
+                    장영섭・이은우<span className="text3-inner">의 아들</span>{" "}
+                    신랑 현준
+                  </div>
+                  <div className="invitation-section-text3">
+                    서상현・이미영<span className="text3-inner">의 딸</span>{" "}
+                    신부 혜림
+                  </div>
+                </FadeInSection>
+              </div>
             </div>
-
             <div className="gallery-section">
               <FadeInSection>
-                <div className="gallery-section-text">GALLERY</div>
+                <div className="congratulatory-section-text">GALLERY</div>
                 <div className="gallery-image-list-wrapper row">
                   {[...Array(12)].map((_, index) => {
                     const imgNumber = index + 1;
@@ -243,7 +244,7 @@ function Bride() {
 
             <div className="location-section">
               <FadeInSection>
-                <div className="location-section-text1">LOCATION</div>
+                <div className="congratulatory-section-text">LOCATION</div>
               </FadeInSection>
             </div>
             <FadeInSection>
