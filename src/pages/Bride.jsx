@@ -129,16 +129,19 @@ function Bride() {
                     <br />
                     잠실 더 베네치아
                   </div>
-                  <div>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                  >
                     <img
                       src={callphoto}
                       className="main-image"
                       alt="t1"
                       style={{
-                        width: "40%",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
+                        width: "30%",
                       }}
                     />
                   </div>
