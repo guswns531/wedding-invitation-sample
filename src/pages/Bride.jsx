@@ -364,8 +364,7 @@ function Bride() {
               />
             )}
           </div>
-          <img src={ment} className="main-image" alt="t1"></img>
-          <div className="col col-md-2 col-lg-3"></div>
+          {/* <div className="col col-md-2 col-lg-3"></div> */}
         </div>
       </div>
     </div>
