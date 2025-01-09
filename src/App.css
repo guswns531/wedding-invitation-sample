@@ -428,7 +428,6 @@
 .overlay-arrows_left,
 .overlay-arrows_right {
   display: flex;
-  background-color: #ffffff;
   justify-content: center;
   align-items: center;
   position: absolute;
