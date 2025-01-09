@@ -113,7 +113,7 @@ function Bride() {
       <div className="main container">
         <div className="row justify-content-md-center">
           <Snowfall color="white" snowflakeCount={50} />
-          <div className="col col-md-2 col-lg-3"></div>
+          <div className="col"></div>
           <div className="col-md">
             <div className="mainsection">
               <div>
