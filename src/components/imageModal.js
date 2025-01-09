@@ -15,12 +15,12 @@ const ImageModal = ({ clickedImg, handleRotationRight, handleRotationLeft, setCl
         
         {/* 오른쪽 화살표 */}
         <div className="overlay-arrows_right" onClick={handleRotationRight}>
-          <img src={RightArrow} alt="Right Arrow" style={{ width: "24px", height: "24px" }} />
+          <img src={RightArrow} alt="Right Arrow" style={{ width: "24px", height: "24px", backgroundColor: "transparent" }} />
         </div>
         
         {/* 왼쪽 화살표 */}
         <div className="overlay-arrows_left" onClick={handleRotationLeft}>
-          <img src={LeftArrow} alt="Left Arrow" style={{ width: "24px", height: "24px" }} />
+          <img src={LeftArrow} alt="Left Arrow" style={{ width: "24px", height: "24px", backgroundColor: "transparent" }} />
         </div>
       </div>
     );

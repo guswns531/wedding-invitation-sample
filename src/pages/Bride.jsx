@@ -215,8 +215,8 @@ function Bride() {
                 <div className="gallery-image-list-wrapper row">
                   {[...Array(18)].map((_, index) => {
                     const imgNumber = index + 1;
-                    const imgSrcMedium = require(`../pages/${imgNumber} Medium.jpeg`);
-                    const imgSrc = require(`../pages/${imgNumber} 2.jpeg`);
+                    const imgSrcMedium = require(`../pictures/${imgNumber} Medium.jpeg`);
+                    const imgSrc = require(`../pictures/${imgNumber}.jpeg`);
                     return (
                       <div
                         key={index}
