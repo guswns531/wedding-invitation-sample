@@ -212,42 +212,43 @@ function Bride() {
             <div className="gallery-section">
               <FadeInSection>
                 <div className="congratulatory-section-text">GALLERY</div>
-                <div className="gallery-image-list-wrapper row">
-                  {[...Array(18)].map((_, index) => {
-                    const imgNumber = index + 1;
-                    const imgSrcMedium = require(`../pictures/${imgNumber} Medium.jpeg`);
-                    const imgSrc = require(`../pictures/${imgNumber}.jpeg`);
-                    return (
-                      <div
-                        key={index}
-                        className="col-4"
-                        style={{ padding: "5px" }} // 이미지 간격
-                      >
-                        <img
-                          className="gallery-image"
-                          src={imgSrcMedium}
-                          alt={`Image ${imgNumber}`}
-                          style={{
-                            width: "100%",
-                            aspectRatio: "1 / 1", // 정사각형 유지
-                            objectFit: "cover",
-                          }}
-                          onClick={() => handleClick({ link: imgSrc }, index)}
-                        />
-                      </div>
-                    );
-                  })}
-                </div>
-                {clickedImg && (
-                  <ImageModal
-                    clickedImg={clickedImg}
-                    handleRotationRight={handleRotationRight}
-                    handleRotationLeft={handleRotationLeft}
-                    setClickedImg={setClickedImg}
-                  />
-                )}
               </FadeInSection>
             </div>
+
+            <div className="gallery-image-list-wrapper row">
+              {[...Array(18)].map((_, index) => {
+                const imgNumber = index + 1;
+                const imgSrcMedium = require(`../pictures/${imgNumber} Medium.jpeg`);
+                const imgSrc = require(`../pictures/${imgNumber}.jpeg`);
+                return (
+                  <div
+                    key={index}
+                    className="col-4"
+                    style={{ padding: "5px" }} // 이미지 간격
+                  >
+                    <img
+                      className="gallery-image"
+                      src={imgSrcMedium}
+                      alt={`Image ${imgNumber}`}
+                      style={{
+                        width: "100%",
+                        aspectRatio: "1 / 1", // 정사각형 유지
+                        objectFit: "cover",
+                      }}
+                      onClick={() => handleClick({ link: imgSrc }, index)}
+                    />
+                  </div>
+                );
+              })}
+            </div>
+            {clickedImg && (
+              <ImageModal
+                clickedImg={clickedImg}
+                handleRotationRight={handleRotationRight}
+                handleRotationLeft={handleRotationLeft}
+                setClickedImg={setClickedImg}
+              />
+            )}
 
             <div className="location-section">
               <FadeInSection>
