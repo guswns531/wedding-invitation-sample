@@ -213,16 +213,25 @@ function Bride() {
               <FadeInSection>
                 <div className="congratulatory-section-text">GALLERY</div>
                 <div className="gallery-image-list-wrapper row">
-                  {[...Array(12)].map((_, index) => {
+                  {[...Array(18)].map((_, index) => {
                     const imgNumber = index + 1;
                     const imgSrcMedium = require(`../pages/${imgNumber} Medium.jpeg`);
-                    const imgSrc = galleryImages[index];
+                    const imgSrc = require(`../pages/${imgNumber} 2.jpeg`);
                     return (
-                      <div key={index} className="col-4">
+                      <div
+                        key={index}
+                        className="col-4"
+                        style={{ padding: "5px" }} // 이미지 간격
+                      >
                         <img
                           className="gallery-image"
                           src={imgSrcMedium}
                           alt={`Image ${imgNumber}`}
+                          style={{
+                            width: "100%",
+                            aspectRatio: "1 / 1", // 정사각형 유지
+                            objectFit: "cover",
+                          }}
                           onClick={() => handleClick({ link: imgSrc }, index)}
                         />
                       </div>
