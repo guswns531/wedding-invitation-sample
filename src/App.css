@@ -574,11 +574,11 @@
 }
 @font-face {
   font-family: 'GabiaGosran';
-  src: local('GabiaGosran'), url(./fonts/gabia/GabiaGosran.woff2) format('woff2'), url(./fonts/gabia/GabiaGosran.ttf) format('truetype');
+  src: local('GabiaGosran'), url(./fonts/gabia/GabiaGosran.otf) format('truetype'), url(./fonts/gabia/GabiaGosran.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Hakgyoansim';
-  src: local('Hakgyoansim'), url(./fonts/Badasseugi/Hakgyoansim-Badasseugi-TTF-L.woff2) format('woff2'), url(./fonts/Badasseugi/Hakgyoansim-Badasseugi-TTF-L.ttf) format('truetype');
+  src: local('Hakgyoansim'), url(./fonts/Badasseugi/Hakgyoansim-Badasseugi-TTF-L.otf) format('truetype'), url(./fonts/Badasseugi/Hakgyoansim-Badasseugi-TTF-L.ttf) format('truetype');
 }
 
 
