@@ -571,10 +571,6 @@
   font-family: 'NotoSansKR';
   src: local('NotoSansKR'), url(./fonts/Noto_Sans_KR/NotoSansKR-Regular.otf) format('truetype');
 }
-@font-face {
-  font-family: 'GabiaGosran';
-  src: local('GabiaGosran'), url(./fonts/gabia/GabiaGosran-Regular.otf) format('truetype'), url(./fonts/gabia/GabiaGosran-Regular.ttf) format('truetype');
-}
 
 @font-face {
   font-family: 'GabiaGosran-Regular';
