@@ -54,7 +54,7 @@
   margin-bottom: 10px;
   color: #000;
   text-align: center;
-  font-family: 'GabiaSolmee', sans-serif;
+  font-family: 'GabiaGosran-Regular', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -70,7 +70,7 @@
   
   color: #000;
   text-align: center;
-  font-family: 'GabiaSolmee', sans-serif;
+  font-family: 'GabiaGosran-Regular', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: bold;
@@ -78,7 +78,7 @@
   letter-spacing: -0.32px;
 }
 .text2-inner {
-  font-family: 'GabiaSolmee', sans-serif;
+  font-family: 'GabiaGosran-Regular', sans-serif;
   font-size: 18px;
   margin: 0 5px;
   font-style: normal;
@@ -89,7 +89,7 @@
 .mainsection-text-3 {
   color: #000;
   text-align: center;
-  font-family: 'GabiaSolmee', sans-serif;
+  font-family: 'GabiaGosran-Regular', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 550;
@@ -120,7 +120,7 @@
   margin-bottom: 32px;
   color: #000;
   text-align: center;
-  font-family: 'GabiaSolmee', sans-serif;
+  font-family: 'GabiaGosran-Regular', sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 800;
@@ -130,7 +130,7 @@
   margin-bottom: 32px;
   color: #000;
   text-align: left;
-  font-family: 'GabiaSolmee', sans-serif;
+  font-family: 'GabiaGosran-Regular', sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -149,14 +149,14 @@
   flex: 1 0 0; */
   width: 100%;
   text-align: center;
-  font-family: 'GabiaSolmee', sans-serif;
+  font-family: 'GabiaGosran-Regular', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: bold;
   line-height: 30px;
 }
 .text3-inner {
-  font-family: 'GabiaSolmee', sans-serif;
+  font-family: 'GabiaGosran-Regular', sans-serif;
   font-size: 10px;
   margin: 0 5px;
   font-style: normal;
@@ -175,7 +175,7 @@
 .gallery-section-text {
   color: #000;
   text-align: center;
-  font-family: 'GabiaSolmee', sans-serif;
+  font-family: 'GabiaGosran-Regular', sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 800;
@@ -192,7 +192,7 @@
 .location-section-text1 {
   color: #000;
   text-align: center;
-  font-family: 'GabiaSolmee', sans-serif;
+  font-family: 'GabiaGosran-Regular', sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 800;
@@ -215,7 +215,7 @@
   flex-direction: column;
   align-self: stretch;
   color: #000;
-  font-family: 'GabiaSolmee', sans-serif;
+  font-family: 'GabiaGosran-Regular', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 800;
@@ -226,7 +226,7 @@
   flex-direction: column;
   align-self: stretch;
   color: #000;
-  font-family: 'GabiaSolmee', sans-serif;
+  font-family: 'GabiaGosran-Regular', sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -273,7 +273,7 @@
   flex-direction: column;
   align-self: stretch;
   color: #000;
-  font-family: 'GabiaSolmee', sans-serif;
+  font-family: 'GabiaGosran-Regular', sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 800;
@@ -294,7 +294,7 @@
   flex-direction: column;
   align-self: stretch;
   color: #000;
-  font-family: 'GabiaSolmee', sans-serif;
+  font-family: 'GabiaGosran-Regular', sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -314,7 +314,7 @@
   flex-direction: column;
   align-self: stretch;
   color: #000;
-  font-family: 'GabiaSolmee', sans-serif;
+  font-family: 'GabiaGosran-Regular', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 800;
@@ -325,7 +325,7 @@
   flex-direction: column;
   align-self: stretch;
   color: #000;
-  font-family: 'GabiaSolmee', sans-serif;
+  font-family: 'GabiaGosran-Regular', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -346,7 +346,7 @@
 .congratulatory-section-text {
   color: #000;
   text-align: center;
-  font-family: 'GabiaSolmee', sans-serif;
+  font-family: 'GabiaGosran-Regular', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -573,7 +573,7 @@
 }
 @font-face {
   font-family: 'GabiaGosran';
-  src: local('GabiaGosran'), url(./fonts/gabia/GabiaSolmee.otf) format('truetype'), url(./fonts/gabia/GabiaSolmee.ttf) format('truetype');
+  src: local('GabiaGosran'), url(./fonts/gabia/GabiaGosran-Regular.otf) format('truetype'), url(./fonts/gabia/GabiaGosran-Regular.ttf) format('truetype');
 }
 
 @font-face {
