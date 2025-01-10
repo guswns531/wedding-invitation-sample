@@ -110,15 +110,15 @@ function Bride() {
 
   return (
     <div className="outside">
+      <div>
+        <img src={mainphoto} className="main-image" alt="t1"></img>
+      </div>
       <div className="main container">
         <div className="row justify-content-md-center">
           {/* <Snowfall color="white" snowflakeCount={50} /> */}
           {/* <div className="col"></div> */}
           <div className="col-md">
             <div className="mainsection">
-              <div>
-                <img src={mainphoto} className="main-image" alt="t1"></img>
-              </div>
               <FadeInSection>
                 <div className="mainsection-text">
                   <div className="mainsection-text-2">
