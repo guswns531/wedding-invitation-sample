@@ -145,7 +145,7 @@ function Bride() {
                   className="main-image"
                   alt="t1"
                   style={{
-                    width: "65%",
+                    width: "95%",
                   }}
                 />
               </div>
@@ -176,6 +176,7 @@ function Bride() {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
+                  paddingTop: "10px",
                 }}
                 className="location-how2-section-text2"
               >
