@@ -71,7 +71,7 @@
   
   color: #000;
   text-align: center;
-  font-family: 'GowunDodum', sans-serif;
+  font-family: 'GowunDodum-Regular', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: bold;
@@ -79,7 +79,7 @@
   letter-spacing: -0.32px;
 }
 .text2-inner {
-  font-family: 'GowunDodum', sans-serif;
+  font-family: 'GowunDodum-Regular', sans-serif;
   font-size: 18px;
   margin: 0 5px;
   font-style: normal;
@@ -347,7 +347,7 @@
 .congratulatory-section-text {
   color: #000;
   text-align: center;
-  font-family: 'GowunDodum', sans-serif;
+  font-family: 'GowunDodum-Regular', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
