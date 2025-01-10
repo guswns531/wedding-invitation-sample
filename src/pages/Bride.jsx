@@ -15,7 +15,7 @@ import ImageModal from "../components/imageModal";
 import AccountModal from "../components/accountModal";
 import mainphoto from "../pages/main.jpeg";
 import roadphoto from "../pages/약도.jpg";
-import callphoto from "../assets/call.png";
+import callphoto from "../cal-2.png";
 import navermap from "../pages/naver-map.png";
 import kakaomap from "../pages/kakao-map.png";
 import googlemap from "../pages/google-map.png";
