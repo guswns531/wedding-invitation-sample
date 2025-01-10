@@ -122,7 +122,7 @@ function Bride() {
               <FadeInSection>
                 <div className="mainsection-text">
                   <div className="mainsection-text-2">
-                    장현준 <span className="text2-inner"> 그리고 </span> 서혜림
+                    장현준 <span className="text2-inner"> & </span> 서혜림
                   </div>
                   <div className="mainsection-text-3">
                     2025. 04. 12 토요일 오전 11시
@@ -193,19 +193,19 @@ function Bride() {
                   <br />
                   그냥 매일 손 잡고 걸을 수 있는
                   <br />
-                  여유로운 저녁이 있는 것<br />
-                  지친 하루의 끝마다 돌아와 꼭 함께하는 것<br />
+                  여유로운 저녁이 있는 것<br />ㅇ 지친 하루의 끝마다 돌아와 꼭
+                  함께하는 것<br />
                   잠시 마주앉아 서로 이야기 들어줄 수 있는 것<br />
                   - 내 꿈은 당신과 나태하게 사는것. 슌 -<br />
                   <br />
                 </div>
                 <div className="invitation-section-text3">
-                  장영섭・이은우<span className="text3-inner">의 아들</span>{" "}
+                  장영섭・이은우<span className="text3-inner">의 장남</span>{" "}
                   신랑 현준
                 </div>
                 <div className="invitation-section-text3">
-                  서상현・이미영<span className="text3-inner">의 딸</span> 신부
-                  혜림
+                  서상현・이미영<span className="text3-inner">의 장녀</span>{" "}
+                  신부 혜림
                 </div>
               </FadeInSection>
             </div>
