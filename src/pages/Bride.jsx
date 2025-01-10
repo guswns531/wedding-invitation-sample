@@ -222,11 +222,7 @@ function Bride() {
                 const imgSrcMedium = require(`../pictures/${imgNumber} Medium.jpeg`);
                 const imgSrc = require(`../pictures/${imgNumber}.jpeg`);
                 return (
-                  <div
-                    key={index}
-                    className="col-4"
-                    style={{ padding: "5px" }} // 이미지 간격
-                  >
+                  <div key={index} className="col-4">
                     <img
                       className="gallery-image"
                       src={imgSrcMedium}
