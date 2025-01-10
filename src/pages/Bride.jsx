@@ -61,7 +61,7 @@ const FadeInSection = ({ children }) => {
 function Bride() {
   // 1부터 12까지의 큰 이미지 배열 (모달용)
   const galleryImages = [...Array(12)].map((_, index) =>
-    require(`../pages/${index + 1} 2.jpeg`)
+    require(`../pictures/${index + 1}.jpeg`)
   );
 
   // state for image modal
@@ -112,7 +112,7 @@ function Bride() {
     <div className="outside">
       <div className="main container">
         <div className="row justify-content-md-center">
-          <Snowfall color="white" snowflakeCount={50} />
+          {/* <Snowfall color="white" snowflakeCount={50} /> */}
           <div className="col col-md-2 col-lg-3"></div>
           <div className="col-md">
             <div className="mainsection">
@@ -145,7 +145,7 @@ function Bride() {
                   className="main-image"
                   alt="t1"
                   style={{
-                    width: "40%",
+                    width: "65%",
                   }}
                 />
               </div>
