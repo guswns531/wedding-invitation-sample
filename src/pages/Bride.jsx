@@ -154,6 +154,7 @@ function Bride() {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
+                  paddingTop: "10px",
                 }}
               >
                 <add-to-calendar-button
@@ -176,7 +177,6 @@ function Bride() {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  paddingTop: "10px",
                 }}
                 className="location-how2-section-text2"
               >
