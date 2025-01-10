@@ -13,7 +13,7 @@ import {
 import "../App.css";
 import ImageModal from "../components/imageModal";
 import AccountModal from "../components/accountModal";
-import mainphoto from "../pages/main.jpeg";
+import mainphoto from "../pictures/main.jpeg";
 import roadphoto from "../pages/약도.jpg";
 import callphoto from "../cal-2.png";
 import navermap from "../pages/naver-map.png";
