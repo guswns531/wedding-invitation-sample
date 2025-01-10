@@ -34,6 +34,7 @@
   overflow: hidden; /* 테두리 밖 내용 숨김 */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
   padding: 20px;
+  max-width: 600px;
 }
 
 .main-image {
