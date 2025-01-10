@@ -71,7 +71,7 @@
   
   color: #000;
   text-align: center;
-  font-family: 'GangwonEdu_OTFBoldA', sans-serif;
+  font-family: 'GowunDodum', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: bold;
@@ -79,7 +79,7 @@
   letter-spacing: -0.32px;
 }
 .text2-inner {
-  font-family: 'GangwonEdu_OTFBoldA', sans-serif;
+  font-family: 'GowunDodum', sans-serif;
   font-size: 18px;
   margin: 0 5px;
   font-style: normal;
@@ -347,7 +347,7 @@
 .congratulatory-section-text {
   color: #000;
   text-align: center;
-  font-family: 'GangwonEdu_OTFBoldA', sans-serif;
+  font-family: 'GowunDodum', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -608,6 +608,13 @@
   font-style: normal;
 }
 
+
+@font-face {
+  font-family: 'GowunDodum-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .form-inline .form-group {
   display: -webkit-box;

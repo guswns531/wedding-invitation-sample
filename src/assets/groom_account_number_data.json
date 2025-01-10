@@ -2,15 +2,15 @@
     "data" : [
         {
             "title" : "신랑 아버님 계좌",
-            "bank_name" : "신한",
-            "account_owner" : "--",
-            "account_number" : "----------"
+            "bank_name" : "카카오뱅크",
+            "account_owner" : "장영섭",
+            "account_number" : "3333088107164"
         },
         {
             "title" : "신랑 어머님 계좌",
             "bank_name" : "신한",
-            "account_owner" : "--",
-            "account_number" : "----------"
+            "account_owner" : "이은우",
+            "account_number" : "110015190980"
         },
         {
             "title" : "신랑 계좌",
