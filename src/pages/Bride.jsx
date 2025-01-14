@@ -60,7 +60,7 @@ const FadeInSection = ({ children }) => {
 
 function Bride() {
   // 1부터 12까지의 큰 이미지 배열 (모달용)
-  const galleryImages = [...Array(12)].map((_, index) =>
+  const galleryImages = [...Array(18)].map((_, index) =>
     require(`../pictures/${index + 1}.jpeg`)
   );
 
