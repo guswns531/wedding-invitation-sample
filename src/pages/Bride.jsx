@@ -328,7 +328,7 @@ function Bride() {
                   주차
                 </div>
                 <div className="location-how2-section-text2">
-                  루터회관 지하주차장 이용
+                  루터회관 지하주차장 이용 (300대 수용, 2시간 무료)
                 </div>
               </div>
             </FadeInSection>
