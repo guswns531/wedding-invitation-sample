@@ -19,7 +19,6 @@ import callphoto from "../cal-2.png";
 import navermap from "../pages/naver-map.png";
 import kakaomap from "../pages/kakao-map.png";
 import googlemap from "../pages/google-map.png";
-import ment from "../pages/IMG_0236.jpg";
 import Snowfall from "react-snowfall";
 import "add-to-calendar-button";
 
