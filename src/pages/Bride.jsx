@@ -307,7 +307,7 @@ function Bride() {
                   위치
                 </div>
                 <div className="location-how2-section-text2">
-                  서울시 송파구 올림픽로35다길 42 루터회관 3층 "더베네치아"
+                  서울시 송파구 올림픽로35다길 42 루터회관 3층 "더 베네치아"
                 </div>
               </div>
               <div className="location-how-publictrans-section">
