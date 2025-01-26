@@ -61,7 +61,7 @@ const FadeInSection = ({ children }) => {
 function Bride() {
   // 1부터 12까지의 큰 이미지 배열 (모달용)
   const galleryImages = [...Array(18)].map((_, index) =>
-    require(`../pictures/${index + 1} Medium.jpeg`)
+    require(`../pictures/${index + 1} Large.jpeg`)
   );
 
   // state for image modal
@@ -219,8 +219,8 @@ function Bride() {
             <div className="gallery-image-list-wrapper row">
               {[...Array(18)].map((_, index) => {
                 const imgNumber = index + 1;
-                const imgSrcMedium = require(`../pictures/${imgNumber} Small.jpeg`);
-                const imgSrc = require(`../pictures/${imgNumber} Medium.jpeg`);
+                const imgSrcMedium = require(`../pictures/${imgNumber} Medium.jpeg`);
+                const imgSrc = require(`../pictures/${imgNumber} Large.jpeg`);
                 return (
                   <div key={index} className="col-4">
                     <img
